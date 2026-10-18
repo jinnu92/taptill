@@ -15,7 +15,7 @@
 
 ![TapTill billing screen with a counter order](assets/shots/pos.webp)
 
-TapTill is installed on the laptop at your counter. Bills, menu and reports live there, so the till opens instantly and keeps working when the internet doesn’t. Fast touch and keyboard billing, GST bills, KOT, tables, offers, loyalty, stock and daily reports, in one app.
+**Your café’s data stays in your café.** TapTill is installed on the computer at your counter. Sales, menu and customer details are stored there, and nothing is uploaded unless you turn on cloud backup or online orders. Billing, the kitchen, printing and reports keep running when the internet is down, and TapTill takes no commission on your sales. Fast touch and keyboard billing, GST bills, KOT, tables, offers, loyalty, stock and daily reports, in one app.
 
 **Try it free for 14 days**: every Pro feature, no key, no card, no sign-up.
 
@@ -50,10 +50,18 @@ TapTill is new and not yet signed with a paid publisher certificate, so Windows 
 
 **What you need:** Windows 10/11 (64-bit) or a Mac (Apple silicon or Intel); Google Chrome or Microsoft Edge for silent printing; an 80 mm or 58 mm USB thermal receipt printer installed with its driver (set it as the default printer, then pick 80 or 58 mm in Settings → Printer & KOT). A touchscreen is optional. No internet is needed for daily use.
 
+## Your data, your café
+
+- **Your café’s data stays in your café.** Sales, menu and customer details are stored on your own computer. TapTill doesn’t send your sales data anywhere; nothing is uploaded unless you turn on cloud backup or online orders.
+- **Works without internet.** Billing, the kitchen, printing and reports keep running when the internet is down.
+- **No commission on your sales.** No per-order or transaction fees charged by TapTill.
+- **Pay only for the features you use.** Basic or Pro, and extra features switched on one at a time with an activation key.
+- **You own your data.** Export reports and take full backups any time. Encrypted cloud backup is optional and protected by your own password.
+- **Staff access is controlled.** Each person has their own PIN and role, and an audit log records discounts, cancellations and changes.
+- **Local, personal support** from the developer in Haryana, on WhatsApp.
+
 ## Why TapTill
 
-- **Works fully offline.** Billing, KOT, tables and reports run on one laptop. No stalls when the Wi-Fi drops.
-- **Your data stays on your machine.** Sales, menu and customers are on the café’s own laptop. Backups run every day on their own.
 - **Touch or keyboard.** Tap tiles, or just start typing. Number keys add items, F9 pays, F2–F4 switch counter, dine-in and delivery.
 - **Indian GST built in.** GST extra or included, CGST and SGST on every bill, GSTIN and FSSAI in the header, round-off, tax invoice and GSTR-1 export.
 - **Thermal bills and KOT** on 80 mm or 58 mm printers, or kitchen tickets on a screen.
@@ -151,7 +159,7 @@ Features marked **(Pro)** come with the Pro plan. Everything else is in both pla
 | Encrypted cloud backup | – | ✓ |
 | Swiggy/Zomato online orders (partner account needed) | – | ✓ |
 
-**Pricing:** contact us for pricing. The 14-day trial includes every Pro feature.
+**Pricing:** contact us for pricing. Pay only for the features you use, with no commission on your sales. The 14-day trial includes every Pro feature.
 
 ## How licensing works
 
@@ -165,7 +173,11 @@ You get reminders from 15 days before the end date, then 7 days of grace. After 
 
 ## FAQ
 
-**Does it work without internet?** Yes. Everything runs on your laptop; phones and tablets connect through your Wi-Fi router without internet. Only Swiggy/Zomato orders and cloud backup uploads need internet.
+**Does TapTill need internet?** No. Billing, KOT, printing, tables, reports and backups run on your computer and keep running when the internet is down. Phones and tablets connect through your café Wi-Fi router without internet; we recommend a separate guest Wi-Fi for customers. Only Swiggy/Zomato orders (with your partner account) and cloud backup uploads need internet.
+
+**Where is my data stored?** On the computer where TapTill is installed: `~/Library/Application Support/TapTill` on a Mac, `%APPDATA%\TapTill` on Windows. The folder is kept when you uninstall or update. Backups are taken every day at a time you choose.
+
+**Do you take a commission on my sales?** No. There are no per-order or transaction fees from TapTill.
 
 **Is it GST ready?** Yes: CGST/SGST on every bill, GSTIN and FSSAI, round-off, tax invoice format with HSN/SAC, and GSTR-1 B2C and HSN summaries as CSV.
 

@@ -280,3 +280,28 @@ table.plans { width: 100%; border-collapse: collapse; font-size: 16px; }
 .mini-grid h3 { font-size: 18px; margin-bottom: 6px; }
 .mini-grid p { color: var(--muted); font-size: 16px; }
 @media (max-width: 600px) { .mini-grid { grid-template-columns: 1fr; gap: 22px; } }
+
+/* ---------- your data, your café ---------- */
+.privacy { background: var(--crema); border-bottom: 1px solid var(--line); }
+.privacy + .section { padding-top: clamp(56px, 8vw, 104px); }
+.privacy .wrap { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: clamp(28px, 5vw, 64px); align-items: start; }
+.promises { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 36px; }
+.promises h3 { font-size: 18.5px; margin-bottom: 6px; color: var(--espresso); }
+.promises p { color: var(--muted); font-size: 16.5px; }
+.ledger { position: relative; background: #fffdf8; padding: 26px 24px 24px; margin-top: 10px; box-shadow: 0 18px 34px -18px rgba(42,22,11,.45); }
+.ledger::before, .ledger::after { content: ""; position: absolute; left: 0; right: 0; height: 9px;
+  background: linear-gradient(-45deg, transparent 4.5px, #fffdf8 0) 0 0 / 9px 9px repeat-x, linear-gradient(45deg, transparent 4.5px, #fffdf8 0) 0 0 / 9px 9px repeat-x; }
+.ledger::before { top: -8px; transform: scaleY(-1); }
+.ledger::after { bottom: -8px; }
+.ledger h3 { font-size: 21px; text-align: center; padding-bottom: 14px; border-bottom: 2px dashed var(--line-strong); }
+.ledger-sub { font-weight: 700; color: var(--espresso); margin-top: 16px; }
+.ledger ul { list-style: none; padding: 0; margin: 6px 0 0; font-size: 15.5px; }
+.ledger li { padding: 6px 0; border-bottom: 1px dotted var(--line-strong); }
+.ledger ul:first-of-type li::before { content: "✓"; color: var(--leaf); font-weight: 700; margin-right: 8px; }
+.ledger ul + .ledger-sub { padding-top: 14px; border-top: 2px dashed var(--line-strong); margin-top: 18px; }
+.ledger-foot { margin-top: 16px; font-size: 14.5px; color: var(--muted); text-align: center; }
+.why-grid.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.faq .answer code { font-family: var(--mono); font-size: .9em; background: var(--paper); border: 1px solid var(--line); border-radius: 4px; padding: 1px 5px; overflow-wrap: anywhere; }
+@media (max-width: 960px) { .privacy .wrap { grid-template-columns: 1fr; } .ledger { max-width: 520px; } }
+@media (max-width: 900px) { .why-grid.four { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .promises { grid-template-columns: 1fr; gap: 22px; } .why-grid.four { grid-template-columns: 1fr; } }
