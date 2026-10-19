@@ -10,7 +10,7 @@
   <a href="https://jinnu92.github.io/taptill/tour.html">Take the tour</a> ·
   <a href="https://jinnu92.github.io/taptill/download.html">Download</a> ·
   <a href="brochure.pdf">Brochure (PDF)</a> ·
-  <a href="https://wa.me/918409718693">WhatsApp</a>
+  <a href="https://wa.me/918209718693">WhatsApp</a>
 </p>
 
 ![TapTill billing screen with a counter order](assets/shots/pos.webp)
@@ -200,7 +200,7 @@ You get reminders from 15 days before the end date, then 7 days of grace. After 
 
 **Praveen Kumar** · Mahendragarh, Haryana
 
-- WhatsApp / Phone: [8409718693](https://wa.me/918409718693)
+- WhatsApp / Phone: [8209718693](https://wa.me/918209718693)
 - Email: [jinnu92@gmail.com](mailto:jinnu92@gmail.com)
 - Website: [jinnu92.github.io/taptill](https://jinnu92.github.io/taptill/) · [Tour](https://jinnu92.github.io/taptill/tour.html) · [Brochure (PDF)](brochure.pdf)
 
