@@ -24,8 +24,8 @@
 | Computer | File | Link |
 |---|---|---|
 | Windows 10 or 11 (64-bit) | `TapTill-2.1.0-Setup.exe` | [Download for Windows](https://github.com/jinnu92/taptill/releases/latest/download/TapTill-2.1.0-Setup.exe) |
-| Mac with Apple silicon (M1 or newer) | `TapTill-2.0.0-mac-arm64.dmg` | [Download for Apple silicon](https://github.com/jinnu92/taptill/releases/latest/download/TapTill-2.0.0-mac-arm64.dmg) |
-| Mac with Intel | `TapTill-2.0.0-mac-intel.dmg` | [Download for Intel Mac](https://github.com/jinnu92/taptill/releases/latest/download/TapTill-2.0.0-mac-intel.dmg) |
+| Mac with Apple silicon (M1 or newer) | `TapTill-2.1.0-mac-arm64.dmg` | [Download for Apple silicon](https://github.com/jinnu92/taptill/releases/latest/download/TapTill-2.1.0-mac-arm64.dmg) |
+| Mac with Intel | `TapTill-2.1.0-mac-intel.dmg` | [Download for Intel Mac](https://github.com/jinnu92/taptill/releases/latest/download/TapTill-2.1.0-mac-intel.dmg) |
 
 All versions are on the [Releases page](https://github.com/jinnu92/taptill/releases/latest). Not sure which Mac you have? Apple menu → About This Mac shows “Chip: Apple …” (Apple silicon) or “Processor: … Intel …”.
 
