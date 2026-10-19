@@ -1,0 +1,1539 @@
+<!doctype html>
+<html lang="en-IN" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to use TapTill: staff training guide</title>
+<meta name="description" content="Step-by-step TapTill guide for owners, cashiers, waiters, kitchen staff, store managers and accountants: billing, tables, KOT, kitchen screen, split bills, UPI, day close, stock, GST and more.">
+<meta name="theme-color" content="#2a160b">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TapTill">
+<meta property="og:title" content="How to use TapTill">
+<meta property="og:description" content="A training guide for every person in your café: what to tap, in what order, and who does what next.">
+<meta property="og:url" content="https://jinnu92.github.io/taptill/guide.html">
+<meta property="og:image" content="https://jinnu92.github.io/taptill/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/guide.css">
+<script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the guide</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="./"><img src="assets/favicon-32.png" width="32" height="32" alt="">TapTill</a>
+    <nav class="nav" aria-label="Main">
+      <a href="./#your-data">Your data</a>
+      <a href="./#features">Features</a>
+      <a href="./#plans">Plans</a>
+      <a href="./#faq">FAQ</a>
+      <a href="tour.html">Tour</a>
+      <a href="guide.html" aria-current="page">Guide</a>
+      <a href="./#contact">Contact</a>
+      <a class="nav-cta" href="download.html">Download</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-head guide-head" id="top-of-guide">
+  <div class="wrap">
+    <h1>How to use TapTill</h1>
+    <p>A training guide for everyone in your café. Pick who you are, follow the steps, and tick off your checklist. Words in <b>bold</b> are exactly what you see on the screen.</p>
+    <p class="guide-ver">Written for TapTill 2.2 on Windows, Mac and Android tablets. Pictures show a demo café, “Chai &amp; Crumbs Café”.</p>
+  </div>
+</div>
+
+<div class="guide-tools" id="tools">
+  <div class="wrap">
+    <div class="role-pick" role="group" aria-labelledby="role-q">
+      <p class="role-q" id="role-q">Who are you?</p>
+      <div class="role-btns">
+        <button type="button" class="role-btn r-owner" data-role="owner" aria-pressed="false"><span class="rb-name">Owner / Admin</span><span class="rb-sub">Sets up and checks everything</span></button>
+        <button type="button" class="role-btn r-cashier" data-role="cashier" aria-pressed="false"><span class="rb-name">Cashier</span><span class="rb-sub">Bills, payments, day close</span></button>
+        <button type="button" class="role-btn r-waiter" data-role="waiter" aria-pressed="false"><span class="rb-name">Waiter / Order taker</span><span class="rb-sub">Table orders on a phone</span></button>
+        <button type="button" class="role-btn r-kitchen" data-role="kitchen" aria-pressed="false"><span class="rb-name">Kitchen</span><span class="rb-sub">KOT and kitchen screen</span></button>
+        <button type="button" class="role-btn r-store" data-role="store" aria-pressed="false"><span class="rb-name">Store manager</span><span class="rb-sub">Stock, purchases, suppliers</span></button>
+        <button type="button" class="role-btn r-ca" data-role="ca" aria-pressed="false"><span class="rb-name">Accountant (CA)</span><span class="rb-sub">Books, GST, export</span></button>
+        <button type="button" class="role-btn role-all" data-role="all" aria-pressed="true"><span class="rb-name">Show everything</span><span class="rb-sub">All roles</span></button>
+      </div>
+    </div>
+    <div class="guide-search">
+      <label for="g-search" class="visually-hidden">Search the guide</label>
+      <svg aria-hidden="true" width="20" height="20" viewBox="0 0 20 20"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13 13l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="search" id="g-search" placeholder="Search, for example “split”, “KOT”, “PIN”" autocomplete="off" enterkeyhint="search">
+      <span class="g-count" id="g-count" aria-live="polite"></span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap guide-layout">
+  <aside class="toc" aria-label="Guide contents">
+    <details class="toc-box" id="toc-box" open>
+      <summary>Contents</summary>
+      <nav id="toc"><ol class="toc-list"><li><a href="#basics">Start here</a></li><li><a href="#team">How the team works together</a></li><li><a href="#setup">Getting started (Admin)</a></li><li><a href="#daily">Every day at the counter and tables</a></li><li><a href="#kitchen">Kitchen</a></li><li><a href="#stock">Stock (Store manager and Admin) Pro</a></li><li><a href="#money">Money and books</a></li><li><a href="#owner">Owner tools</a></li><li><a href="#help">Troubleshooting and questions</a></li><li><a href="#checklists">Training checklists</a></li><li><a href="#shortcuts">Keyboard shortcuts</a></li></ol></nav>
+    </details>
+  </aside>
+  <main id="main" class="guide-main">
+    <p class="role-note" id="role-note" hidden></p>
+    <div class="no-results" id="no-results" hidden>
+      <p><strong>Nothing found.</strong> Try another word, like “bill”, “table” or “cash”.</p>
+      <button type="button" class="btn btn-line" id="clear-search">Clear the search</button>
+    </div>
+
+    <section class="gsec" id="basics" data-roles="owner cashier waiter kitchen store ca">
+      <h2>Start here</h2>
+      <article class="sc" id="what-is-taptill" data-roles="owner cashier waiter kitchen store ca">
+        <h3>What TapTill is, in one minute</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li></ul>
+        <ul class="plain">
+          <li>TapTill runs on the café’s main computer (the <b>counter computer</b>). Bills, menu and reports are stored there.</li>
+          <li>It works without internet. Phones and tablets connect over the café Wi-Fi.</li>
+          <li>Everyone has their own name and PIN. What you can see depends on your role.</li>
+          <li>The menu on the left (or the bar on top) shows only the screens your role can use.</li>
+        </ul>
+        <p class="tip"><strong>Tip:</strong> Press <span class="key">Ctrl</span> <span class="key">K</span> (<span class="key">Cmd</span> <span class="key">K</span> on a Mac) to search for any screen or setting.</p>
+      </article>
+      <article class="sc" id="plan-tags" data-roles="owner cashier waiter kitchen store ca">
+        <h3>What the plan tags mean</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li></ul>
+        <p>Some features depend on the licence. A tag shows the lowest plan that has it: <span class="tag tag-adv">Advanced</span> <span class="tag tag-pro">Pro</span> <span class="tag tag-plus">Pro Plus</span>. No tag means every plan has it. The 14-day trial has everything.</p>
+        <p>With a <b>Custom</b> licence, features are picked one by one. To see yours, the Admin opens <b>Settings → Licence → What your plan includes</b>.</p>
+        <p class="tip"><strong>If something is missing:</strong> a locked screen says <b>Available in your plan upgrade — contact your seller</b>. Nothing is broken; ask the owner.</p>
+      </article>
+      <article class="sc" id="roles-table" data-roles="owner cashier waiter kitchen store ca">
+        <h3>The six roles and what each can do</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li></ul>
+        <div class="table-scroll"><table class="gtable">
+          <thead><tr><th scope="col">Role</th><th scope="col">Can do</th><th scope="col">Cannot do</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Admin</th><td>Everything: menu, offers, reports, settings, users, licence, backups, approvals.</td><td>—</td></tr>
+            <tr><th scope="row">Cashier</th><td>Billing, payments, discounts, cancel a bill with a reason, today’s bills, payouts, mark orders ready, close the day, accept online and table QR orders.</td><td>Bills from other dates, menu, settings, most reports.</td></tr>
+            <tr><th scope="row">Order taker</th><td>Takes table (dine-in) orders and sends them to the kitchen.</td><td>Payments, discounts, cancelling, counter or delivery orders.</td></tr>
+            <tr><th scope="row">Kitchen</th><td>Only the kitchen screen: <b>Start</b> and <b>Ready</b>.</td><td>Everything else.</td></tr>
+            <tr><th scope="row">Store manager <span class="tag tag-pro">Pro</span></th><td>Stock: suppliers, purchases, returns, wastage, counts, purchase orders, supplier dues. Big entries wait for the Admin.</td><td>Billing, sales, settings, food cost, approvals.</td></tr>
+            <tr><th scope="row">Accountant <span class="tag tag-pro">Pro</span></th><td>Read-only books: bills (all dates), reports, GST, expenses, stock, cash drawer, the CA export, questions on bills.</td><td>Any change to bills, menu or settings.</td></tr>
+          </tbody>
+        </table></div>
+      </article>
+    </section>
+
+    <section class="gsec" id="team" data-roles="owner cashier waiter kitchen store ca">
+      <h2>How the team works together</h2>
+      <p class="sec-lede">Most jobs pass from one person to the next. Each flow below shows who does what, what the next person sees, and how they know it is their turn.</p>
+
+      <article class="sc hflow" id="flow-dine-in" data-roles="waiter kitchen cashier owner">
+        <h3>Dine-in: from table order to free table</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li></ul>
+        <ol class="lane" aria-label="Who does what, in order">
+          <li class="ln r-waiter"><span class="ln-who">Waiter</span><span class="ln-do">Opens the table, adds items, <b>Send to kitchen</b></span></li>
+          <li class="ln r-kitchen"><span class="ln-who">Kitchen</span><span class="ln-do">Gets a KOT or a ticket, taps <b>Start</b>, then <b>Ready</b></span></li>
+          <li class="ln r-waiter"><span class="ln-who">Waiter</span><span class="ln-do">Serves the food, adds more items if asked</span></li>
+          <li class="ln r-cashier"><span class="ln-who">Cashier</span><span class="ln-do"><b>Print bill</b>, then <b>Pay</b> (split or UPI)</span></li>
+          <li class="ln r-cashier"><span class="ln-who">TapTill</span><span class="ln-do">The table shows <b>Free</b> again</span></li>
+        </ol>
+        <ol class="gsteps">
+          <li><strong>Waiter:</strong> on the phone or at the counter, open <b>Tables</b> and tap a free table (or press <span class="key">F3</span> in POS). Add the items and press <b>Send to kitchen</b> (<span class="key">Ctrl</span>+<span class="key">S</span>).</li>
+          <li><strong>Kitchen, how they know:</strong> it depends on <b>Settings → Printing &amp; kitchen → Orders go to the kitchen by</b>:
+            <ul><li><b>Printed ticket (KOT)</b>: a KOT prints on the counter printer. A KOT from a phone is printed by the counter computer, so TapTill must be open and logged in there.</li>
+            <li><b>Kitchen screen</b>: a new ticket appears on the kitchen screen within a few seconds (with a chime when <b>Sound on</b>).</li>
+            <li><b>Screen and printed ticket</b>: both.</li></ul></li>
+          <li><strong>Kitchen:</strong> tap <b>Start</b> when cooking begins and <b>Ready</b> when the food is done. The ticket turns amber, then red, if it waits too long.</li>
+          <li><strong>Waiter, how they know:</strong> the table card on <b>Tables</b> shows <b>In kitchen</b>, <b>Preparing</b> or <b>Ready</b>. With table service <span class="tag tag-pro">Pro</span> the <b>Served</b> button lights up when everything is ready; tap <b>Served</b> after serving. If a customer display is used, the table name shows under <b>READY</b>.</li>
+          <li><strong>More items:</strong> open the same table again, add the items and press <b>Send to kitchen</b>. Only the new items go on the next KOT or ticket.</li>
+          <li><strong>Bill:</strong> the guest asks for the bill (or taps <b>Ask for bill</b> on the table QR page). The waiter taps <b>Bill asked</b> on <b>Tables</b> so the counter can see it. The cashier opens the table in POS and presses <b>Print bill</b> (<span class="key">F7</span>).</li>
+          <li><strong>Cashier:</strong> press <b>Pay</b> (<span class="key">F9</span>), pick <b>Cash</b>, <b>UPI</b> or <b>Card</b>, or <b>Split</b>. The bill prints and the table becomes <b>Free</b>.</li>
+        </ol>
+        <p class="tip"><strong>Remember:</strong> order takers cannot take payment. The bill always goes through a Cashier or the Admin.</p>
+      </article>
+
+      <article class="sc hflow" id="flow-counter" data-roles="cashier kitchen owner">
+        <h3>Counter or takeaway: pay first, collect when ready</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-kitchen">Kitchen</li></ul>
+        <ol class="lane" aria-label="Who does what, in order">
+          <li class="ln r-cashier"><span class="ln-who">Cashier</span><span class="ln-do">Bills on <b>Counter</b> and takes payment</span></li>
+          <li class="ln r-kitchen"><span class="ln-who">Kitchen</span><span class="ln-do">KOT or ticket with the order number, <b>Start</b>, <b>Ready</b></span></li>
+          <li class="ln r-cashier"><span class="ln-who">Display</span><span class="ln-do">The number shows under <b>READY</b></span></li>
+          <li class="ln r-cashier"><span class="ln-who">Cashier</span><span class="ln-do">Hands it over, taps <b>Collected</b></span></li>
+        </ol>
+        <ol class="gsteps">
+          <li><strong>Cashier:</strong> in POS keep <b>Counter</b> (<span class="key">F2</span>), add items, press <b>Pay</b>. The bill prints. With KOT printing on, the KOT prints too.</li>
+          <li><strong>Kitchen, how they know:</strong> a KOT, or a ticket on the kitchen screen labelled with the last 3 digits of the bill number (for example <b>001</b>). Tap <b>Start</b>, then <b>Ready</b>.</li>
+          <li><strong>Customer, how they know:</strong> when the kitchen taps <b>Ready</b>, the number appears on the customer display <span class="tag tag-adv">Advanced</span>. Without a kitchen screen, the cashier can press <b>Ready</b> (<span class="key">F6</span>) in POS right after the payment, or <b>Mark ready</b> on <b>Orders</b>.</li>
+          <li><strong>Cashier:</strong> when the customer picks it up, open <b>Orders</b>, tap the bill and press <b>Collected</b>. The number leaves the display and the kitchen ticket is cleared.</li>
+        </ol>
+        <figure class="gshot "><img src="assets/shots/guide/display.webp" width="1280" height="889" loading="lazy" decoding="async" alt="Customer display with an offer slide and order 001 under READY" style="max-width:min(100%,1280px)"></figure>
+        <p class="tip"><strong>Good to know:</strong> ready numbers drop off the display by themselves after 20 minutes.</p>
+      </article>
+
+      <article class="sc hflow" id="flow-selforder" data-roles="cashier waiter kitchen owner">
+        <h3>Table QR self-order: guest orders from their phone <span class="tag tag-pro">Pro</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li></ul>
+        <ol class="lane" aria-label="Who does what, in order">
+          <li class="ln r-guest"><span class="ln-who">Guest</span><span class="ln-do">Scans the table QR, taps <b>Place order</b></span></li>
+          <li class="ln r-cashier"><span class="ln-who">Cashier / Waiter</span><span class="ln-do">Chime, <b>Table requests</b>, <b>Accept</b></span></li>
+          <li class="ln r-kitchen"><span class="ln-who">Kitchen</span><span class="ln-do">KOT or ticket, <b>Start</b>, <b>Ready</b></span></li>
+          <li class="ln r-guest"><span class="ln-who">Guest</span><span class="ln-do"><b>Call waiter</b> or <b>Ask for bill</b></span></li>
+          <li class="ln r-cashier"><span class="ln-who">Staff</span><span class="ln-do">Responds, taps <b>Done</b>, bills the table</span></li>
+        </ol>
+        <ol class="gsteps">
+          <li><strong>Guest:</strong> scans the QR on the table, adds items and taps <b>Place order</b>. Their phone shows <b>Waiting for the staff to confirm</b>.</li>
+          <li><strong>Staff, how they know:</strong> on POS and Tables, the <b>Table requests</b> button shows a red count, a chime plays and a message pops up (“New order from T6”). Anyone who takes orders (Admin, Cashier, Order taker) can open it.</li>
+          <li><strong>Staff:</strong> check the items and press <b>Accept</b>. The items join that table’s order and go to the kitchen. Or press <b>Reject</b> and pick a reason (for example <b>Item sold out</b>); the guest sees it.</li>
+          <li><strong>Auto-accept:</strong> if the Admin ticked <b>Send table orders to the kitchen without a staff check (auto-accept)</b>, orders skip this step.</li>
+          <li><strong>Calls:</strong> <b>Call waiter</b> and <b>Ask for bill</b> also ring the chime and show in <b>Table requests</b> and on the table card (“Calling waiter”). Go to the table, then tap <b>Done</b>.</li>
+          <li><strong>Paying:</strong> guests never pay on the phone. Bill the table at the counter as usual.</li>
+        </ol>
+        <div class="shot-pair"><figure class="gshot phone"><img src="assets/shots/guide/phone-selforder.webp" width="780" height="1560" loading="lazy" decoding="async" alt="Guest&#x27;s phone showing the café menu for table T6 with Add buttons" style="max-width:min(100%,390px)"></figure><figure class="gshot narrow"><img src="assets/shots/guide/inbox-table.webp" width="480" height="455" loading="lazy" decoding="async" alt="Table requests panel with a waiter call and a self-order from T6 with Accept and Reject" style="max-width:min(100%,480px)"></figure></div>
+      </article>
+
+      <article class="sc hflow" id="flow-online" data-roles="cashier kitchen owner">
+        <h3>Swiggy or Zomato order <span class="tag tag-pro">Pro</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-kitchen">Kitchen</li></ul>
+        <ol class="lane" aria-label="Who does what, in order">
+          <li class="ln r-guest"><span class="ln-who">Platform</span><span class="ln-do">New order arrives, chime</span></li>
+          <li class="ln r-cashier"><span class="ln-who">Cashier</span><span class="ln-do"><b>Online orders</b>, <b>Accept</b></span></li>
+          <li class="ln r-kitchen"><span class="ln-who">Kitchen</span><span class="ln-do">KOT or ticket, <b>Start</b>, <b>Ready</b></span></li>
+          <li class="ln r-cashier"><span class="ln-who">Cashier</span><span class="ln-do">Packs it for the rider, <b>Collected</b></span></li>
+        </ol>
+        <ol class="gsteps">
+          <li><strong>Cashier, how they know:</strong> the <b>Online orders</b> button on POS shows a red count and a chime plays. The Admin’s <b>Today</b> screen also lists waiting orders.</li>
+          <li><strong>Cashier:</strong> open <b>Online orders</b>, check the items and press <b>Accept</b>. TapTill makes the bill and sends it to the kitchen. Or press <b>Reject</b> with a reason.</li>
+          <li>If an item says <b>Not linked to your menu</b>, <b>Accept</b> is greyed out. The Admin links it in <b>Settings → Online orders → Menu mapping</b>.</li>
+          <li><strong>Kitchen:</strong> cooks it like any order. <strong>Cashier:</strong> hands it to the rider and marks it <b>Collected</b> on <b>Orders</b>.</li>
+        </ol>
+        <p class="note"><strong>Status today:</strong> Swiggy and Zomato connect through UrbanPiper, which is marked “coming soon” in TapTill 2.2. Until then the Admin can press <b>Send test order</b> in <b>Settings → Online orders</b> to practise this flow. Orders you type in yourself with <b>Delivery</b> (<span class="key">F4</span>) and a Swiggy or Zomato platform work in every plan.</p>
+        <figure class="gshot narrow"><img src="assets/shots/guide/inbox-online.webp" width="480" height="470" loading="lazy" decoding="async" alt="Online orders panel with a Swiggy order, its items and Accept and Reject buttons" style="max-width:min(100%,480px)"></figure>
+      </article>
+
+      <article class="sc hflow" id="flow-change" data-roles="waiter cashier kitchen owner">
+        <h3>Change or cancel after the KOT</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li></ul>
+        <ol class="lane" aria-label="Who does what, in order">
+          <li class="ln r-waiter"><span class="ln-who">Waiter</span><span class="ln-do">Removes an item from an open table, tells the kitchen</span></li>
+          <li class="ln r-cashier"><span class="ln-who">Cashier / Admin</span><span class="ln-do">Cancels a whole bill with a reason</span></li>
+          <li class="ln r-kitchen"><span class="ln-who">Kitchen</span><span class="ln-do">The ticket disappears from the screen</span></li>
+          <li class="ln r-owner"><span class="ln-who">Admin</span><span class="ln-do">Checks <b>Discounts &amp; cancellations</b></span></li>
+        </ol>
+        <ol class="gsteps">
+          <li><strong>One item less on an open table:</strong> anyone who takes orders can open the table, press <b>−</b> or <b>×</b> on the line and save. <strong>TapTill does not print a cancel slip</strong>, so tell the kitchen yourself.</li>
+          <li><strong>Cancel a whole order or a paid bill:</strong> only a Cashier or the Admin. Open <b>Orders</b>, tap the bill, press <b>Cancel order</b>, type the reason (it is required) and press <b>Cancel order</b> again. Order takers do not see this button.</li>
+          <li><strong>Kitchen, what they see:</strong> a cancelled order’s tickets leave the kitchen screen. A printed KOT is not taken back, so say it out loud.</li>
+          <li><strong>Money:</strong> a bill cancelled on the same day simply drops out of the day’s sales. A bill paid on an earlier day shows as a refund in the cash drawer on the day you cancel it.</li>
+          <li><strong>Admin:</strong> every cancellation, with who did it and why, is in <b>Reports → Discounts &amp; cancellations</b> <span class="tag tag-adv">Advanced</span> and the <b>Audit log</b>.</li>
+        </ol>
+      </article>
+
+      <article class="sc hflow" id="flow-stock" data-roles="store owner">
+        <h3>Store manager and Admin: approvals <span class="tag tag-pro">Pro</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-store">Store manager</li></ul>
+        <ol class="lane" aria-label="Who does what, in order">
+          <li class="ln r-store"><span class="ln-who">Store manager</span><span class="ln-do">Saves a big purchase, wastage or count</span></li>
+          <li class="ln r-store"><span class="ln-who">TapTill</span><span class="ln-do"><b>Waiting for Admin approval</b></span></li>
+          <li class="ln r-owner"><span class="ln-who">Admin</span><span class="ln-do"><b>Approve</b> or <b>Reject</b></span></li>
+          <li class="ln r-store"><span class="ln-who">Store manager</span><span class="ln-do">Sees the result in <b>My requests</b></span></li>
+        </ol>
+        <ol class="gsteps">
+          <li><strong>Store manager:</strong> saves a purchase, return, wastage, adjustment or stock count. If its value is above the limit (₹500 unless the Admin changed it), TapTill says <b>Waiting for Admin approval</b> and stock does not change yet.</li>
+          <li><strong>Admin, how they know:</strong> the <b>Today</b> screen shows “stock entries waiting for your approval”, and <b>Stock → Approvals</b> has a count.</li>
+          <li><strong>Admin:</strong> open <b>Stock → Approvals</b> and press <b>Approve</b> (stock updates now) or <b>Reject</b> (with an optional reason).</li>
+          <li><strong>Store manager:</strong> <b>Stock → My requests</b> shows <b>Pending</b>, approved or rejected. Add the bill photo to a purchase after it is approved.</li>
+        </ol>
+        <figure class="gshot "><img src="assets/shots/guide/approvals.webp" width="1280" height="889" loading="lazy" decoding="async" alt="Stock Approvals tab with the approval limit and two purchases waiting with Approve and Reject buttons" style="max-width:min(100%,1280px)"></figure>
+      </article>
+
+      <article class="sc hflow" id="flow-ca" data-roles="ca owner">
+        <h3>Accountant and Admin: questions on a bill <span class="tag tag-pro">Pro</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-ca">Accountant</li></ul>
+        <ol class="lane" aria-label="Who does what, in order">
+          <li class="ln r-ca"><span class="ln-who">Accountant</span><span class="ln-do"><b>Ask about this bill</b></span></li>
+          <li class="ln r-owner"><span class="ln-who">Admin</span><span class="ln-do">Sees it on <b>Today</b>, replies</span></li>
+          <li class="ln r-ca"><span class="ln-who">Accountant</span><span class="ln-do">Reads the reply in <b>Accounts</b></span></li>
+        </ol>
+        <ol class="gsteps">
+          <li><strong>Accountant:</strong> open <b>Orders</b>, find the bill, tap it and press <b>Ask about this bill</b>. Type the question and press <b>Send question</b>.</li>
+          <li><strong>Admin, how they know:</strong> <b>Today</b> shows “question(s) from your accountant”. Open <b>Accounts → Bill queries</b> (or the bill itself on <b>Orders</b>).</li>
+          <li><strong>Admin:</strong> type the answer and press <b>Reply &amp; resolve</b>.</li>
+          <li><strong>Accountant:</strong> <b>Accounts → Bill queries</b> shows it as <b>resolved</b> with the reply. Use <b>All</b> to see older ones.</li>
+        </ol>
+        <figure class="gshot narrow"><img src="assets/shots/guide/acc-ask.webp" width="592" height="345" loading="lazy" decoding="async" alt="Ask about a bill window with a question typed and a Send question button" style="max-width:min(100%,592px)"></figure>
+      </article>
+
+      <article class="sc hflow" id="flow-shift" data-roles="cashier waiter kitchen owner">
+        <h3>A shift: clock in, open the drawer, close the day</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li></ul>
+        <ol class="lane" aria-label="Who does what, in order">
+          <li class="ln r-waiter"><span class="ln-who">All staff</span><span class="ln-do"><b>Clock in / out</b> on the login screen</span></li>
+          <li class="ln r-cashier"><span class="ln-who">First cashier</span><span class="ln-do">Counts the opening cash</span></li>
+          <li class="ln r-cashier"><span class="ln-who">Cashier</span><span class="ln-do">Payouts during the day</span></li>
+          <li class="ln r-cashier"><span class="ln-who">Cashier</span><span class="ln-do"><b>Close day</b>, Z-report prints</span></li>
+          <li class="ln r-owner"><span class="ln-who">Admin</span><span class="ln-do">Checks the Z-report and shifts</span></li>
+        </ol>
+        <ol class="gsteps">
+          <li><strong>Everyone</strong> <span class="tag tag-adv">Advanced</span>: on the login screen tap <b>Clock in / out</b>, tap your name and type your PIN. This does not log you in. Do it again when you leave.</li>
+          <li><strong>First Cashier or Admin of the day, how they know:</strong> right after logging in, TapTill asks <b>Start the day: count the cash in the drawer</b>. Count the notes and press <b>Save opening cash</b>. A cashier cannot skip this; an Admin can.</li>
+          <li><strong>During the day:</strong> cash taken out for milk, gas or supplies goes in as <b>Add payout</b> with a reason.</li>
+          <li><strong>Cashier at closing:</strong> open <b>Reports → Day-end</b>, count the cash, press <b>Close day</b>. The Z-report opens for printing.</li>
+          <li><strong>Admin, how they know:</strong> <b>Today</b> shows “Day closed. Z-report is ready”. Check over or short cash on <b>Reports → Day-end</b> and the hours on <b>Service → Shifts</b>. Only the Admin can <b>Reopen day</b>.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="gsec" id="setup" data-roles="owner">
+      <h2>Getting started (Admin)</h2>
+      <p class="sec-lede">Do these once, in this order, before the first customer. Most of it is in <b>Settings</b>, which has its own list of sections on the left.</p>
+
+      <article class="sc" id="install" data-roles="owner">
+        <h3>Install TapTill and open it</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <ol class="gsteps">
+          <li>Download the file for your computer from the <a href="download.html">Download page</a>.</li>
+          <li><strong>Windows:</strong> open <b>TapTill-…-Setup.exe</b>. If you see “Windows protected your PC”, click <b>More info</b>, then <b>Run anyway</b>. Follow the installer and open TapTill from the Start menu.</li>
+          <li><strong>Mac:</strong> open the <b>.dmg</b> and drag TapTill into <b>Applications</b>. If the Mac says it cannot be opened, click <b>Done</b>, then go to <b>System Settings → Privacy &amp; Security</b> and click <b>Open Anyway</b>.</li>
+          <li><strong>Android tablet:</strong> open the Download page on the tablet, tap <b>Download for Android</b> and open the <b>.apk</b>. Allow <b>Install unknown apps</b> if asked, then tap <b>Install</b>. See <a href="#android-tablet">Run the café on an Android tablet</a>.</li>
+          <li>Install Google Chrome or Microsoft Edge too, so bills print in one tap without a print window.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> your data stays in the TapTill folder on this computer and is kept when you update, reinstall or uninstall.</p>
+      </article>
+
+      <article class="sc" id="android-tablet" data-roles="owner cashier">
+        <h3>Run the café on an Android tablet</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <ol class="gsteps">
+          <li>One Android tablet (Android 8 or newer) can be the whole till: billing, menu, reports and backups all run on it. No laptop is needed.</li>
+          <li>The first time you open TapTill, tap <b>Allow</b> for notifications and <b>Allow</b> when asked to let TapTill always run in the background. This keeps the till, waiter phones and the kitchen screen working when the screen turns off.</li>
+          <li>Leave the tablet on its charger during service. A small <b>TapTill is running</b> notification stays at the top: that is normal.</li>
+          <li><b>Printer is optional.</b> Go to <b>Settings → Printer &amp; KOT → This tablet's printer</b> and choose <b>Off</b> (no printer), <b>Bluetooth receipt printer</b> (pair it first in the tablet's Bluetooth settings) or <b>Android print dialog</b>. Press <b>Save printer</b>, then <b>Print test receipt</b>.</li>
+          <li>Waiter phones and a kitchen screen connect to the tablet like to a laptop: turn on <b>Settings → Phones &amp; tablets</b> and pair them on the same Wi-Fi.</li>
+          <li>The tablet plays a different sound for a new online or QR order, a table calling a waiter, food ready, and an approval or accountant question. Change or mute each sound in the tablet's <b>Settings → Apps → TapTill → Notifications</b>.</li>
+          <li>Exports (CA export, Excel, backups) are saved in the tablet's <b>Downloads → TapTill</b> folder.</li>
+        </ol>
+        <p class="tip"><strong>Licence:</strong> the tablet has its own <b>Installation ID</b> in <b>Settings → Licence</b>. If the tablet is reset to factory settings, the ID changes: ask your seller to move the licence (it is free).</p>
+      </article>
+
+      <article class="sc" id="admin-pin" data-roles="owner">
+        <h3>Create the Admin name and PIN</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/setup.webp" width="752" height="530" loading="lazy" decoding="async" alt="Welcome to TapTill screen with Your name, Choose a PIN and Type the PIN again" style="max-width:min(100%,752px)"></figure>
+        <ol class="gsteps">
+          <li>The first time TapTill opens it shows <b>Welcome to TapTill</b>.</li>
+          <li>Type <b>Your name</b>, choose a PIN of 4 to 6 digits and type it again.</li>
+          <li>Press <b>Create Admin and start</b>.</li>
+        </ol>
+        <p class="tip"><strong>Tip:</strong> make a second Admin for a trusted partner later (on <b>Users</b>). If the only Admin forgets the PIN, your seller has to reset it.</p>
+      </article>
+
+      <article class="sc" id="licence" data-roles="owner">
+        <h3>Trial and the licence key</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/set-licence.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Settings, Licence section with status, plan, Installation ID with a Copy button and a box for the licence key" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>The first 14 days are a free trial with every feature. The banner on top shows the days left.</li>
+          <li>To buy, open <b>Settings → Licence</b>, press <b>Copy</b> next to the <b>Installation ID</b> and send it to your seller on WhatsApp.</li>
+          <li>Paste the key you get back (it starts with <b>CPOS</b>) in <b>Licence key</b>, or use <b>or open a key file</b>. Press <b>Install key</b>.</li>
+          <li><b>What your plan includes</b> lists your features. <b>Limits</b> shows how many users, phones and outlets you can have.</li>
+        </ol>
+        <p class="tip"><strong>Renewing:</strong> do the same with the new key before the end date. Bills and menu are never touched.</p>
+      </article>
+
+      <article class="sc" id="cafe-details" data-roles="owner">
+        <h3>Café name, address, GSTIN and bill numbers</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/set-cafe.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Settings, Cafe and invoice: Cafe details, GST invoice and Bill numbering cards" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Settings → Cafe &amp; invoice</b>.</li>
+          <li>Fill <b>Cafe name</b>, <b>Phone</b>, <b>GSTIN</b>, <b>FSSAI</b>, <b>Address</b> and the <b>Receipt footer</b> (for example “Thank you! Visit again.”). Add a logo with <b>Upload logo</b>. Press <b>Save cafe details</b>.</li>
+          <li>Under <b>GST invoice</b>, add the <b>Legal name</b>, <b>State</b>, <b>State code</b> and <b>Default HSN/SAC</b>. With a GSTIN, paid bills print as a <b>Tax Invoice</b>. Press <b>Save GST invoice</b>.</li>
+          <li>Under <b>Bill numbering</b>, set the <b>Bill number prefix</b>. Tick <b>Restart numbers every financial year</b> for numbers like CAFE/25-26/00001.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="gst" data-roles="owner">
+        <h3>GST extra or included in the price</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot paper"><img src="assets/shots/guide/receipt.webp" width="311" height="565" loading="lazy" decoding="async" alt="Printed tax invoice with GSTIN, HSN/SAC, CGST and SGST at 2.5 percent each and the total" style="max-width:min(100%,311px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Settings → Tax &amp; GST</b>.</li>
+          <li>Pick <b>No GST</b>, <b>GST extra (exclusive)</b> or <b>GST included (inclusive)</b>.</li>
+          <li>Set the <b>GST rate (%)</b>, for example 5. Tick <b>Round off bill total to nearest rupee</b> if you want whole rupees.</li>
+          <li>Press <b>Save tax</b>. The bill shows CGST and SGST as two halves.</li>
+        </ol>
+        <p class="tip"><strong>One item at another rate?</strong> See <a href="#item-gst">Different GST rate or HSN for one item</a>.</p>
+      </article>
+
+      <article class="sc" id="payments-upi" data-roles="owner">
+        <h3>Payment methods and your UPI QR</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/set-payments.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Settings, Payments and UPI: Cash, UPI and Card chips and the UPI ID field" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Settings → Payments &amp; UPI</b>. Cash, UPI and Card are there already. Add others (for example “Paytm card”) and press <b>Save payments</b>.</li>
+          <li>Type your <b>UPI ID</b> (for example mycafe@okaxis) and <b>Payee name</b>, then press <b>Save UPI</b>.</li>
+          <li>Now the pay screen, the unpaid bill and the customer display show a QR with the exact amount. Tick <b>Also print the QR on paid receipts</b> if you want it there too.</li>
+        </ol>
+        <p class="warn"><strong>Important:</strong> TapTill does not check the bank. The cashier confirms only after the money arrives on the phone.</p>
+      </article>
+
+      <article class="sc" id="billing-settings" data-roles="owner">
+        <h3>Discounts, delivery platforms and advance orders</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <ol class="gsteps">
+          <li>Open <b>Settings → Billing</b>.</li>
+          <li><b>Discounts</b>: tick <b>Allow discounts on bills</b> (on by default) or untick it to stop all discounts.</li>
+          <li><b>Delivery platforms</b>: the names shown for delivery orders (Own, Swiggy, Zomato). <b>Aggregators</b> are platforms that collect the money themselves, so their orders stay out of the cash drawer.</li>
+          <li><b>Advance orders</b> <span class="tag tag-adv">Advanced</span>: how many minutes before pickup the kitchen gets the order, and whether the advance is refunded when an order is cancelled.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="menu" data-roles="owner">
+        <h3>Add categories and items</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/menu-items.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Menu page: categories on the left, Coffee items with price, Veg and Available ticks, Options and Archive buttons" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Menu</b>. Under <b>Categories</b>, type a name (for example Coffee) in <b>New category</b> and press <b>Add</b>. The number next to each category sets its order on the POS.</li>
+          <li>Tap a category. At the bottom of the items, type the <b>New item name</b> and price, tick or untick <b>Veg</b>, and press <b>Add item</b>.</li>
+          <li>To change a name or price, tap it and type. It saves when you leave the box.</li>
+          <li>Sold out today? Untick <b>Available</b>. Not selling it any more? Press <b>Archive</b> (<b>Show archived</b> brings it back with <b>Restore</b>).</li>
+          <li><b>Hide</b> on a category takes the whole category off the POS.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="options" data-roles="owner">
+        <h3>Sizes, add-ons and choices</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/menu-group.webp" width="592" height="660" loading="lazy" decoding="async" alt="Edit option group window for Size: Required, Min picks, Max picks and options Small, Medium plus 20 rupees and Large plus 40 rupees" style="max-width:min(100%,592px)"></figure>
+        <ol class="gsteps">
+          <li>On <b>Menu</b>, under <b>Options &amp; variants</b>, press <b>New option group</b>.</li>
+          <li>Give it a <b>Name</b> (Size, Add-ons, Milk). For a size, tick <b>Required (a variant such as Size)</b> and keep <b>Max picks</b> at 1. For add-ons, set <b>Max picks</b> to how many a guest may choose.</li>
+          <li>Type each option and its price change in ₹ (0 = same price). <b>+ Add option</b> adds a row. Press <b>Save group</b>.</li>
+          <li>Attach the group: press <b>Options</b> on the item, tick the group, press <b>Save</b>.</li>
+        </ol>
+        <p class="tip"><strong>Kitchen notes</strong> like “less sugar” need no setup: the cashier types them when adding the item.</p>
+      </article>
+
+      <article class="sc" id="item-gst" data-roles="owner">
+        <h3>Different GST rate or HSN for one item</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/menu-itemopts.webp" width="592" height="453" loading="lazy" decoding="async" alt="Item options and tax window with option groups, HSN/SAC and GST rate" style="max-width:min(100%,592px)"></figure>
+        <ol class="gsteps">
+          <li>On <b>Menu</b>, press <b>Options</b> on the item.</li>
+          <li>Under <b>GST</b>, type the <b>HSN/SAC</b> and pick the <b>GST rate</b> (<b>Default</b> uses the café rate).</li>
+          <li>Press <b>Save</b>.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> combos are taxed at your default GST rate under HSN/SAC 996331. A <b>!</b> badge on <b>Options</b> means the item’s rate is no longer a GST slab: pick a new one.</p>
+      </article>
+
+      <article class="sc" id="menu-excel" data-roles="owner">
+        <h3>Upload the whole menu from Excel <span class="tag tag-adv">Advanced</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <ol class="gsteps">
+          <li>On <b>Menu</b>, press <b>Download template</b> (or <b>Export menu</b> to start from your current menu).</li>
+          <li>Fill it in Excel and save it as .xlsx.</li>
+          <li>Press <b>Import from Excel</b> and choose the file. TapTill shows a preview: <b>new</b>, <b>changed</b>, <b>unchanged</b> and rows <b>with errors (skipped)</b>.</li>
+          <li>Optionally tick <b>Archive items not in this file</b>. Press <b>Confirm import</b>.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="tables-setup" data-roles="owner">
+        <h3>Add, rename or hide tables</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/set-tables.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Settings, Tables and QR ordering: table codes with New code, the tables list with Rename and Hide, and the Add table box" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Settings → Tables &amp; QR ordering</b>.</li>
+          <li>Under <b>Tables</b>, type a <b>New table name</b> (T1, Garden 2) and press <b>Add table</b>.</li>
+          <li>Use <b>Rename</b> or <b>Hide</b> on a table; hidden tables get a <b>Restore</b> button.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="printer" data-roles="owner">
+        <h3>Printer, receipts and KOT</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/set-printing.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Settings, Printing and kitchen: paper width, copies, print automatically, KOT and kitchen mode" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Install your 80 mm or 58 mm thermal printer with its driver and make it the <strong>default printer</strong> on the computer.</li>
+          <li>Open <b>Settings → Printing &amp; kitchen</b>. Pick the <b>Paper width</b> and number of <b>Copies</b>.</li>
+          <li>Tick <b>Print bill automatically after payment</b> and, if the kitchen uses paper tickets, <b>Enable kitchen order tickets (KOT)</b>. Press <b>Save printer</b>.</li>
+          <li>Under <b>Kitchen</b>, choose <b>Orders go to the kitchen by</b>: <b>Printed ticket (KOT)</b>, <b>Kitchen screen</b> or <b>Screen and printed ticket</b>. Press <b>Save kitchen</b>.</li>
+          <li>After your first bill, press <b>Print test receipt</b> to check.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> the kitchen screen choices need the kitchen display in your licence <span class="tag tag-adv">Advanced</span>. Orders sent by an order taker always print a KOT for the new items.</p>
+      </article>
+
+      <article class="sc" id="users" data-roles="owner">
+        <h3>Add staff, roles and PINs</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/users.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Users page: Add a person with Name, Role, PIN and PIN again, a list of what each role can do, and the people list" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Users</b>. Under <b>Add a person</b>, type the <b>Name</b>, pick the <b>Role</b>, type a <b>PIN</b> (4 to 6 digits) twice and press <b>Add</b>.</li>
+          <li>Give each person their own PIN. Never share one login: reports and the audit log show who did what.</li>
+          <li>In the people list: <b>Edit</b> changes the name or role, <b>Reset PIN</b> sets a new PIN, <b>Turn off</b> stops a person who left (their bills stay).</li>
+        </ol>
+        <p class="tip"><strong>Limits:</strong> the badge shows <b>Users: 3 of 6</b>. A role your plan lacks shows <b>(Not in your plan)</b>. Store manager and Accountant need <span class="tag tag-pro">Pro</span>, Kitchen needs the kitchen display <span class="tag tag-adv">Advanced</span>.</p>
+      </article>
+
+      <article class="sc" id="lock-settings" data-roles="owner">
+        <h3>Auto-lock when nobody is using it</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/lock.webp" width="452" height="627" loading="lazy" decoding="async" alt="Locked screen asking for Ravi&#x27;s PIN with a Switch user button" style="max-width:min(100%,452px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Settings → Staff &amp; lock</b>.</li>
+          <li>Set <b>Lock the screen after this many idle minutes</b> (0 = never on this laptop). Press <b>Save</b>.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> phones and tablets always lock, after 10 minutes when this is 0. A locked screen asks for the same person’s PIN, or tap <b>Switch user</b>.</p>
+      </article>
+
+      <article class="sc" id="phones" data-roles="owner">
+        <h3>Pair a phone or tablet <span class="tag tag-adv">Advanced</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/set-pair.webp" width="592" height="592" loading="lazy" decoding="async" alt="Pair a phone or tablet window with the address, a QR code and a 6-digit code" style="max-width:min(100%,592px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Settings → Phones &amp; tablets</b>. Tick <b>Allow phones &amp; tablets on the Wi-Fi</b>, then close TapTill and open it again.</li>
+          <li>Press <b>Pair new device</b>. A 6-digit code and an address appear.</li>
+          <li>On the phone, join the café Wi-Fi and open that address (or scan the QR). If the browser warns about the certificate, see <a href="#phone-cert">Phone shows a “not secure” warning</a>.</li>
+          <li>Type the code, give the device a name (for example “Waiter phone 1”), choose <b>Staff phone or tablet</b>, <b>Customer display screen</b> or <b>Kitchen screen</b>, and press <b>Pair this device</b>.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> the code works for 5 minutes, once. Put customers on your router’s guest Wi-Fi. <b>Remove</b> takes a lost phone off at once.</p>
+      </article>
+
+      <article class="sc" id="kitchen-setup" data-roles="owner kitchen">
+        <h3>Set up the kitchen screen <span class="tag tag-adv">Advanced</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-kitchen">Kitchen</li></ul>
+        <ol class="gsteps">
+          <li>In <b>Settings → Printing &amp; kitchen</b>, set <b>Orders go to the kitchen by</b> to <b>Kitchen screen</b> or <b>Screen and printed ticket</b>.</li>
+          <li>Set <b>Turn amber after</b> and <b>Turn red after</b> (minutes). Press <b>Save kitchen</b>.</li>
+          <li>On the kitchen tablet, pair it as a <b>Kitchen screen</b> (no login needed). Or add a <b>Kitchen</b> user on <b>Users</b>; they log in and see only the kitchen screen.</li>
+          <li>Tap <b>Sound off</b> once on the kitchen screen to turn the chime on.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="display-setup" data-roles="owner">
+        <h3>Customer display and menu board <span class="tag tag-adv">Advanced</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/set-display.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Settings, Customer display: seconds per slide, menu highlights, order ready numbers and menu board" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Settings → Customer display</b>. Set <b>Seconds per slide</b>, <b>Menu highlights</b> and tick <b>Show “order ready” numbers</b>.</li>
+          <li><b>Menu board</b> <span class="tag tag-pro">Pro</span>: choose <b>When there are no offers</b> or <b>Always (between offers)</b>, and tick the categories to show.</li>
+          <li>Press <b>Save display</b>.</li>
+          <li>Second screen on this computer: press <b>Open display</b>, drag the window to the second screen and press <span class="key">F11</span>. TV or tablet on the Wi-Fi: pair it as a <b>Customer display screen</b>.</li>
+        </ol>
+        <p class="tip"><strong>What it shows:</strong> live offers as slides, ready order numbers, and the UPI QR while the cashier is taking a UPI payment.</p>
+      </article>
+
+      <article class="sc" id="qr-setup" data-roles="owner">
+        <h3>Set up table QR ordering <span class="tag tag-pro">Pro</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <ol class="gsteps">
+          <li>Turn on phones first (<a href="#phones">Pair a phone or tablet</a>, step 1). Guests reach the menu over the café Wi-Fi.</li>
+          <li>Open <b>Settings → Tables &amp; QR ordering</b>. Press <b>Print table QR codes</b> and print the sheet (one card per table).</li>
+          <li>Decide on <b>Send table orders to the kitchen without a staff check (auto-accept)</b> and press <b>Save</b>.</li>
+          <li>A QR card lost or copied? Press <b>New code</b> next to that table: the old code stops working at once. <b>New codes for all tables</b> replaces every card.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="loyalty-setup" data-roles="owner">
+        <h3>Turn on loyalty points or stamps <span class="tag tag-pro">Pro</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <ol class="gsteps">
+          <li>Open <b>Settings → Loyalty</b> and tick <b>Turn on loyalty (points or stamps)</b>.</li>
+          <li>Pick <b>Points</b> (set <b>Points earned per ₹100</b>, <b>1 point is worth (₹)</b>, <b>Minimum points to redeem</b>) or <b>Stamps (every Nth item free)</b>.</li>
+          <li>Optional <b>Birthday offer</b>: percent off or one free item, once a year within 3 days of the birthday.</li>
+          <li>Press <b>Save loyalty settings</b>.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="appearance" data-roles="owner">
+        <h3>Change the colours</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/set-appearance.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Settings, Appearance with six theme swatches, colour pickers and Light, Dark, Auto mode" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Settings → Appearance</b>.</li>
+          <li>Pick a theme (Espresso, Matcha, Berry, Ocean, Charcoal, Saffron) or your own <b>Main colour</b>, and a <b>Mode</b>: <b>Light</b>, <b>Dark</b> or <b>Auto</b>.</li>
+          <li>Press <b>Save</b>. <b>Reset to default</b> goes back to Espresso.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="gsec" id="daily" data-roles="owner cashier waiter">
+      <h2>Every day at the counter and tables</h2>
+
+      <article class="sc" id="login" data-roles="owner cashier waiter kitchen store ca">
+        <h3>Log in, switch user and lock</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/login-full.webp" width="752" height="961" loading="lazy" decoding="async" alt="Login screen with staff name tiles, a PIN pad and the Clock in or out button" style="max-width:min(100%,752px)"></figure>
+        <ol class="gsteps">
+          <li>Tap your name, then type your PIN on the pad (or on the keyboard) and press <b>OK</b>.</li>
+          <li>TapTill opens your screen: Admin → <b>Today</b>, Cashier and Order taker → <b>POS</b>, Kitchen → <b>Kitchen</b>, Store manager → <b>Stock</b>, Accountant → <b>Accounts</b>.</li>
+          <li>Leaving the counter? Press <b>Switch user</b> so the next person logs in as themselves.</li>
+          <li>After some idle minutes the screen shows <b>Locked</b>. Type the same PIN to carry on, or <b>Switch user</b>.</li>
+        </ol>
+        <p class="tip"><strong>If something goes wrong:</strong> after 5 wrong PINs TapTill says <b>Too many tries — wait 60 seconds</b>. See <a href="#forgot-pin">Forgot PIN</a>.</p>
+      </article>
+
+      <article class="sc" id="clock" data-roles="cashier waiter kitchen store owner">
+        <h3>Clock in and clock out <span class="tag tag-adv">Advanced</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/clock.webp" width="752" height="949" loading="lazy" decoding="async" alt="Clock in or out window with staff tiles, a PIN pad and the message Ravi clocked in" style="max-width:min(100%,752px)"></figure>
+        <ol class="gsteps">
+          <li>On the login screen tap <b>Clock in / out</b>.</li>
+          <li>Tap your name and type your PIN. It says “clocked in at 10:02. Have a good shift!”.</li>
+          <li>Do the same when you leave; it shows the hours worked.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> clocking in does not log you in. Forgot to clock out? Tell the Admin, who fixes it in <b>Service → Attendance</b>.</p>
+      </article>
+
+      <article class="sc" id="cash-in" data-roles="cashier owner">
+        <h3>Start of the day: count the opening cash</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/cashin.webp" width="552" height="677" loading="lazy" decoding="async" alt="Start the day window with note counters for 500, 200, 100, 50, 20, 10 rupees and coins, and Save opening cash" style="max-width:min(100%,552px)"></figure>
+        <ol class="gsteps">
+          <li>The first Cashier or Admin to log in sees <b>Start the day: count the cash in the drawer</b>.</li>
+          <li>For each note, tap <b>+</b> or type how many. The total shows at the bottom. Last night’s closing count is shown for comparison.</li>
+          <li>Press <b>Save opening cash</b>.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> a cashier cannot skip this. An Admin can press <b>Skip for now</b> and fix it later in <b>Reports → Cash drawer</b>.</p>
+      </article>
+
+      <article class="sc" id="counter-bill" data-roles="cashier owner">
+        <h3>A walk-in or takeaway customer</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/pos-counter.webp" width="1280" height="889" loading="lazy" decoding="async" alt="POS with item tiles on the left and a counter order with Cappuccino, Paneer Tikka Sandwich and Brownie, totals with CGST and SGST, and the Pay button" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>On <b>POS</b>, keep <b>Counter</b> selected (<span class="key">F2</span>). Takeaway is billed as Counter too.</li>
+          <li>Tap the item tiles, or just start typing the name. A small badge (×2) shows how many are on the bill.</li>
+          <li>Change the quantity with <b>+</b> and <b>−</b>, or remove a line with <b>×</b>.</li>
+          <li>Press <b>Pay</b> (<span class="key">F9</span>), pick the method and press <b>Pay</b> again. The bill prints.</li>
+        </ol>
+        <p class="tip"><strong>Tip:</strong> <span class="key">Esc</span> clears the search; pressed again it asks <b>Clear this order?</b>.</p>
+      </article>
+
+      <article class="sc" id="keyboard" data-roles="cashier owner">
+        <h3>Bill fast with the keyboard</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/pos-search.webp" width="1280" height="889" loading="lazy" decoding="async" alt="POS search for cap showing Cappuccino highlighted" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Type a few letters, for example “cap”. The best match is highlighted; <span class="key">Enter</span> adds it. <span class="key">↑</span> <span class="key">↓</span> move the highlight.</li>
+          <li>Number keys <span class="key">1</span>–<span class="key">9</span> add the first nine tiles on screen.</li>
+          <li><span class="key">+</span> and <span class="key">-</span> change the quantity of the last line, <span class="key">Del</span> removes it.</li>
+          <li><span class="key">F9</span> pay, <span class="key">F8</span> discount. The bar at the bottom of POS lists all keys.</li>
+        </ol>
+        <p class="tip"><strong>On a Mac:</strong> use <span class="key">Cmd</span> where this guide says <span class="key">Ctrl</span>. If the F keys change the brightness, hold <span class="key">fn</span>. Full list: <a href="#shortcuts">Keyboard shortcuts</a>.</p>
+      </article>
+
+      <article class="sc" id="modifiers" data-roles="cashier waiter owner">
+        <h3>Item with a size, add-ons or a kitchen note</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/pos-options.webp" width="712" height="596" loading="lazy" decoding="async" alt="Options window for Cappuccino with Size Medium and Extra shot picked and the note less sugar" style="max-width:min(100%,712px)"></figure>
+        <ol class="gsteps">
+          <li>Tap an item that has options. A window opens with big buttons; required choices (like <b>Size</b>) come first.</li>
+          <li>Tap the choices, or press their numbers <span class="key">1</span>–<span class="key">9</span>. The price updates.</li>
+          <li>Type a <b>Note for the kitchen</b> if needed (for example “less sugar”). It prints on the KOT and the bill.</li>
+          <li>Press <b>Add</b> (<span class="key">Enter</span>).</li>
+        </ol>
+        <p class="tip"><strong>Change it later:</strong> tap <b>Options</b> under the line (or <span class="key">Ctrl</span>+<span class="key">E</span>). Lines already sent to the kitchen cannot be changed; add a new line with the note instead.</p>
+      </article>
+
+      <article class="sc" id="dine-in" data-roles="cashier waiter owner">
+        <h3>Take a table (dine-in) order</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/pos-table.webp" width="1280" height="889" loading="lazy" decoding="async" alt="POS with Dine-in selected and Table T2, Order 7814 loaded with Masala Chai and Samosa, and Print bill and Save buttons" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Press <b>Dine-in</b> (<span class="key">F3</span>). Type the table number and press <span class="key">Enter</span>, or tap it. Or tap a table on <b>Tables</b>.</li>
+          <li>Add the items.</li>
+          <li>Press <b>Save</b> (<span class="key">Ctrl</span>+<span class="key">S</span>). For an order taker the button is called <b>Send to kitchen</b>. The KOT prints or the kitchen screen gets the ticket.</li>
+          <li>The table now shows <b>Occupied</b> with its running total.</li>
+        </ol>
+        <p class="tip"><strong>If something goes wrong:</strong> an orange <b>unsaved</b> badge means the changes are not with the kitchen yet. Press <b>Save</b>.</p>
+      </article>
+
+      <article class="sc" id="waiter-phone" data-roles="waiter owner">
+        <h3>Take orders on a phone as a waiter <span class="tag tag-adv">Advanced</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-waiter">Waiter</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/pos-taker.webp" width="1280" height="889" loading="lazy" decoding="async" alt="POS for an order taker: only Dine-in, a table order and the Send to kitchen button" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open TapTill on your paired phone and log in with your PIN.</li>
+          <li>Tap <b>Tables</b>, then the table. On a phone the bill is behind the <b>Cart</b> bar at the bottom.</li>
+          <li>Add the items, check the cart, press <b>Send to kitchen</b>. The phone says <b>KOT sent to the counter printer</b> when KOT printing is used.</li>
+          <li>Payment is not on your screen: tell the cashier when the guest wants the bill.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> order takers see only <b>Dine-in</b>. Counter, delivery and advance orders are for the cashier.</p>
+      </article>
+
+      <article class="sc" id="add-more" data-roles="waiter cashier owner">
+        <h3>The table orders more</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
+        <ol class="gsteps">
+          <li>Open the same table (it shows <b>Occupied</b>). Its order loads with the earlier items.</li>
+          <li>Add the new items and press <b>Save</b> / <b>Send to kitchen</b>.</li>
+          <li>Only the new items go to the kitchen. The bill keeps everything.</li>
+        </ol>
+        <p class="tip"><strong>If something goes wrong:</strong> if two people change the same table at once, TapTill reloads the latest order instead of overwriting it. Add your items again and save.</p>
+      </article>
+
+      <article class="sc" id="tables-view" data-roles="waiter cashier owner">
+        <h3>See all tables at a glance</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/tables-cashier.webp" width="1280" height="889" loading="lazy" decoding="async" alt="Tables screen: occupied tables in green with totals, Ordered chips and Served and Bill asked buttons, free tables with Seat guests" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Tables</b>. It shows how many are occupied and free.</li>
+          <li>A busy table shows its total, number of items and minutes seated. The kitchen chip shows <b>In kitchen</b>, <b>Preparing</b> or <b>Ready</b>.</li>
+          <li>Tap a free table to start an order, or a busy one to open it.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="table-service" data-roles="waiter cashier owner">
+        <h3>Seated, served, bill asked <span class="tag tag-pro">Pro</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
+        <ol class="gsteps">
+          <li>Guests sit down: tap <b>Seat guests</b> under a free table. The timer starts.</li>
+          <li>Food served: tap <b>Served</b>. It is highlighted when the kitchen has marked everything ready.</li>
+          <li>Guest asks for the bill: tap <b>Bill asked</b> so the cashier sees it. <b>Clear bill request</b> undoes it.</li>
+          <li>A bell like <b>Calling waiter</b> means a guest pressed a button on the table QR page. Go to them, then tap <b>Done: waiter</b> or <b>Done: bill</b>.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="print-bill" data-roles="cashier owner">
+        <h3>Print the bill before payment</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <ol class="gsteps">
+          <li>Open the table (or advance order) in POS.</li>
+          <li>Press <b>Print bill</b> (<span class="key">F7</span>). Unsaved items are saved first.</li>
+          <li>The slip says <b>BILL (not paid)</b> and, with a UPI ID set, has a QR for the amount.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="discount" data-roles="cashier owner">
+        <h3>Give a discount</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/pos-discount.webp" width="592" height="452" loading="lazy" decoding="async" alt="Discount window with Percent and Flat amount, a value box and 5, 10, 15 and 20 percent buttons" style="max-width:min(100%,592px)"></figure>
+        <ol class="gsteps">
+          <li>Press <b>Discount</b> (<span class="key">F8</span>).</li>
+          <li>Tap <b>5%</b>, <b>10%</b>, <b>15%</b> or <b>20%</b>, or choose <b>% Percent</b> or <b>₹ Flat amount</b>, type the value and press <b>Apply</b>.</li>
+          <li><b>Remove</b> takes it off.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> only Cashiers and Admins can give discounts, and each one is recorded with the person’s name. If it says <b>Discounts are turned off</b>, the Admin switched them off in Settings.</p>
+      </article>
+
+      <article class="sc" id="pay" data-roles="cashier owner">
+        <h3>Take payment: cash, UPI or card</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/pos-pay-upi.webp" width="652" height="561" loading="lazy" decoding="async" alt="Payment window with Cash, UPI and Card buttons and a UPI QR for the bill amount" style="max-width:min(100%,652px)"></figure>
+        <ol class="gsteps">
+          <li>Press <b>Pay</b> (<span class="key">F9</span>). The amount due is shown big.</li>
+          <li>Tap <b>Cash</b>, <b>UPI</b> or <b>Card</b> (or press <span class="key">1</span>, <span class="key">2</span>, <span class="key">3</span>).</li>
+          <li>For UPI, the guest scans the QR (also shown on the customer display). <strong>Wait until the money shows on your phone.</strong></li>
+          <li>Press <b>Pay</b> (<span class="key">Enter</span>). The toast says <b>Bill … paid</b>, and the bill prints if auto print is on.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="split" data-roles="cashier owner">
+        <h3>A customer wants to split the bill</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/pos-split.webp" width="652" height="780" loading="lazy" decoding="async" alt="Payment window in split mode: 263 rupees cash and 200 rupees UPI, Adds up, and a UPI QR for 200 rupees" style="max-width:min(100%,652px)"></figure>
+        <ol class="gsteps">
+          <li>Press <b>Pay</b> (<span class="key">F9</span>), then <b>Split</b> (<span class="key">S</span>).</li>
+          <li>Type each amount, for example 200 in <b>UPI</b>. Tap <b>Cash</b> to fill it with what is left.</li>
+          <li>When it says <b>Adds up — press Enter to pay</b>, press <b>Pay (split)</b>.</li>
+        </ol>
+        <p class="tip"><strong>If something goes wrong:</strong> “Still ₹… to collect” or “₹… more than the bill” means the amounts don’t match the total. <b>One method</b> goes back to a single payment. Split works across payment methods (for example part cash, part UPI), not by items.</p>
+      </article>
+
+      <article class="sc" id="delivery" data-roles="cashier owner">
+        <h3>A delivery or phone order</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/pos-delivery.webp" width="592" height="533" loading="lazy" decoding="async" alt="Delivery details window with customer name, phone, address and platform" style="max-width:min(100%,592px)"></figure>
+        <ol class="gsteps">
+          <li>Press <b>Delivery</b> (<span class="key">F4</span>).</li>
+          <li>Fill <b>Customer name</b> (needed), <b>Phone</b>, <b>Address</b> and the <b>Platform</b> (Own, Swiggy, Zomato). Press <b>Save details</b>.</li>
+          <li>Add the items and press <b>Pay</b>.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> Swiggy and Zomato orders are kept out of the cash drawer because the platform collects the money.</p>
+      </article>
+
+      <article class="sc" id="advance" data-roles="cashier owner">
+        <h3>A cake for tomorrow: advance orders <span class="tag tag-adv">Advanced</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/pos-book.webp" width="652" height="490" loading="lazy" decoding="async" alt="Book advance order window with the total, advance taken now and payment method buttons" style="max-width:min(100%,652px)"></figure>
+        <ol class="gsteps">
+          <li>Press <b>Advance</b> (<span class="key">F10</span>). Fill <b>Customer name</b>, <b>Phone</b>, <b>Pickup date</b> and <b>Pickup time</b>, press <b>Save details</b>.</li>
+          <li>Add the items and press <b>Book</b> (<span class="key">F9</span>).</li>
+          <li>Type the <b>Advance taken now (optional)</b>, pick the method and press <b>Book order</b>.</li>
+          <li>The kitchen gets it automatically before pickup (30 minutes unless the Admin changed it). 15 minutes before pickup a ⏰ reminder appears on POS.</li>
+          <li>At pickup, tap the reminder (or <b>Orders → Advance orders → Open in POS</b>) and press <b>Pay</b> for the balance.</li>
+        </ol>
+        <p class="tip"><strong>Changing the time or name:</strong> cancel and book it again from <b>Orders</b>.</p>
+      </article>
+
+      <article class="sc" id="find-bill" data-roles="cashier owner ca">
+        <h3>Find a bill</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-ca">Accountant</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/orders.webp" width="1280" height="889" loading="lazy" decoding="async" alt="Orders page with date, status filter, search box and today&#x27;s bills" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Orders</b>. Today’s bills are listed with time, type, table or customer, total and payment.</li>
+          <li>Filter by <b>Paid</b>, <b>Open</b> or <b>Cancelled</b>, or search a bill number or customer name.</li>
+          <li>Tap a row to see the details: who took it, who settled it, discounts and payments.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> Cashiers see today’s bills only. The Admin and Accountant can pick any date.</p>
+      </article>
+
+      <article class="sc" id="reprint" data-roles="cashier owner">
+        <h3>Reprint a bill or a KOT</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/orders-drawer.webp" width="440" height="1000" loading="lazy" decoding="async" alt="Order detail panel with items, totals and buttons Reprint, Print KOT, Mark ready and Cancel order" style="max-width:min(100%,440px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Orders</b> and tap the bill.</li>
+          <li>Press <b>Reprint</b> for a paid bill, <b>Print bill</b> for an open one, or <b>Print KOT</b> to print the whole kitchen ticket again.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="cancel" data-roles="cashier owner">
+        <h3>Cancel a bill (with a reason)</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/orders-cancel.webp" width="592" height="322" loading="lazy" decoding="async" alt="Cancel window asking for a required reason, with Keep order and Cancel order buttons" style="max-width:min(100%,592px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Orders</b> and tap the bill.</li>
+          <li>Press <b>Cancel order</b>. Type the <b>Reason (required)</b>, for example “Customer left, refunded cash”.</li>
+          <li>Press <b>Cancel order</b>. <b>Keep order</b> goes back.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> stock and loyalty points come back. The owner sees every cancellation with your name. See also <a href="#flow-change">Change or cancel after the KOT</a>.</p>
+      </article>
+
+      <article class="sc" id="remove-item" data-roles="waiter cashier owner kitchen">
+        <h3>Remove an item that already went to the kitchen</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li></ul>
+        <ol class="gsteps">
+          <li>Open the table, press <b>−</b> or <b>×</b> on the line and <b>Save</b>.</li>
+          <li><strong>Tell the kitchen yourself.</strong> TapTill does not print a cancel slip and the kitchen screen ticket stays as it was.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="ready" data-roles="cashier owner">
+        <h3>Tell a customer their order is ready</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <ol class="gsteps">
+          <li>With a kitchen screen, the number goes to the customer display when the kitchen taps <b>Ready</b>.</li>
+          <li>Without one, press <b>Ready</b> (<span class="key">F6</span>) in POS after a counter bill, or <b>Mark ready</b> on <b>Orders</b>.</li>
+          <li>When it is picked up, press <b>Collected</b> on <b>Orders</b>.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> the <b>Ready</b> button appears only when your licence has a customer display or kitchen screen <span class="tag tag-adv">Advanced</span>.</p>
+      </article>
+
+      <article class="sc" id="online" data-roles="cashier owner">
+        <h3>Swiggy or Zomato order in the inbox <span class="tag tag-pro">Pro</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <ol class="gsteps">
+          <li>A chime plays and <b>Online orders</b> on POS shows a count. Tap it.</li>
+          <li>Check the items and press <b>Accept</b>, or <b>Reject</b> with a reason (<b>Item sold out</b>, <b>Kitchen closed</b>, <b>Too busy right now</b>).</li>
+          <li>Accepting makes the bill and sends it to the kitchen.</li>
+        </ol>
+        <p class="tip"><strong>Status:</strong> the UrbanPiper link is “coming soon”; see <a href="#flow-online">the online order flow</a>. Sound plays only after someone has tapped the screen once.</p>
+      </article>
+
+      <article class="sc" id="selforder" data-roles="cashier waiter owner">
+        <h3>A guest ordered from the table QR <span class="tag tag-pro">Pro</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
+        <ol class="gsteps">
+          <li>A chime plays and <b>Table requests</b> shows a count. Tap it.</li>
+          <li>For an order, press <b>Accept</b> (it joins the table’s order and goes to the kitchen) or <b>Reject</b> with a reason.</li>
+          <li>For a waiter call or bill request, go to the table and press <b>Done</b>.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="loyalty" data-roles="cashier owner">
+        <h3>A regular customer: points and birthday <span class="tag tag-pro">Pro</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/pos-customer.webp" width="432" height="828" loading="lazy" decoding="async" alt="Customer panel on POS: Anjali Das, 115 visits, favourites and 1124 points, above the order" style="max-width:min(100%,432px)"></figure>
+        <ol class="gsteps">
+          <li>Type the customer’s phone in <b>Customer phone</b> and press <b>Find</b>.</li>
+          <li>A regular shows their visits, last bill, favourites and points. Tick <b>Redeem … pts</b> to use points on this bill. <b>Birthday soon!</b> with <b>Birthday offer</b> appears near their birthday.</li>
+          <li>A new number asks for a <b>Name</b> and optional <b>Birthday MM-DD</b>: press <b>Add customer</b>.</li>
+          <li>Pay as usual. Points are added after payment and printed on the bill. <b>Change</b> removes the customer from this bill.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="offers-pos" data-roles="cashier waiter owner">
+        <h3>Combos and offers at the till <span class="tag tag-adv">Advanced</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
+        <ol class="gsteps">
+          <li>Live combos have their own <b>Combos</b> tab on POS. Tap one like an item.</li>
+          <li>Percent-off and happy-hour offers apply by themselves; the bill shows an <b>Offers</b> line.</li>
+          <li>Buy X get Y: when the guest qualifies, POS shows “Add 1 … it’s free” with an <b>Add</b> button.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="feedback" data-roles="cashier owner">
+        <h3>Customer feedback after the visit <span class="tag tag-pro">Pro</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <ol class="gsteps">
+          <li>With phones turned on, paid bills print a QR: “Tell us how we did”.</li>
+          <li>The guest scans it, gives 1 to 5 stars, ticks Taste, Speed, Service or Value and can add a comment. Each bill can rate once, within 7 days.</li>
+          <li>The Admin reads it in <b>Service → Feedback</b>, with low ratings listed separately.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="payout" data-roles="cashier owner">
+        <h3>Paying the milkman from the drawer</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/payout.webp" width="592" height="403" loading="lazy" decoding="async" alt="Add payout window with Amount 120 and Reason Milk 4 litres" style="max-width:min(100%,592px)"></figure>
+        <ol class="gsteps">
+          <li>Press <b>Add payout</b> (in the menu or the top bar).</li>
+          <li>Type the <b>Amount (₹)</b> and the <b>Reason</b>, press <b>Save payout</b>.</li>
+          <li>Expected cash in the drawer goes down by that amount.</li>
+        </ol>
+        <p class="tip"><strong>Admin:</strong> in <b>Reports → Cash drawer</b>, <b>Add payout</b> you can also tick <b>Also record as an expense</b> <span class="tag tag-adv">Advanced</span>.</p>
+      </article>
+
+      <article class="sc" id="count-cash" data-roles="owner">
+        <h3>Check the cash drawer during the day</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/rep-drawer.webp" width="1280" height="889" loading="lazy" decoding="async" alt="Reports, Cash drawer: totals by Cash, UPI and Card, expected cash, opening cash, payouts and a Count cash button" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Reports → Cash drawer</b>. It shows sales by method and <b>Expected cash in drawer</b> (opening + cash sales − payouts).</li>
+          <li>Press <b>Count cash</b>, count the notes and press <b>Save count</b>. It shows <b>Matches</b>, <b>Over by</b> or <b>Short by</b>.</li>
+          <li>Tick UPI and card bills one by one as you match them with your bank app.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="day-close" data-roles="cashier owner">
+        <h3>Close the day and print the Z-report</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/rep-dayend.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Reports, Day-end: Close day with expected cash, a note counter and the Close day button" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Bill or close all open tables first.</li>
+          <li>Open <b>Reports → Day-end</b> (the Admin can also use <b>Close day</b> on <b>Today</b>). It shows paid bills, total sales and the expected cash.</li>
+          <li>Count the cash with the <b>−</b> / <b>+</b> buttons. It shows <b>Matches expected</b>, <b>Over by</b> or <b>Short by</b>.</li>
+          <li>Press <b>Close day</b>. The Z-report opens: print it.</li>
+        </ol>
+        <p class="tip"><strong>If something goes wrong:</strong> TapTill warns if tables are still open (they won’t be in today’s figures) or if you counted ₹0. Only the Admin can <b>Reopen day</b>, then close it again.</p>
+      </article>
+    </section>
+
+    <section class="gsec" id="kitchen" data-roles="kitchen owner cashier waiter">
+      <h2>Kitchen</h2>
+
+      <article class="sc" id="kot-or-screen" data-roles="kitchen owner cashier waiter">
+        <h3>Paper KOT or kitchen screen?</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li></ul>
+        <ul class="plain">
+          <li><strong>Printed ticket (KOT):</strong> every saved order prints a ticket with the table or order number, items, options and notes. Only items the kitchen has not seen yet are printed.</li>
+          <li><strong>Kitchen screen</strong> <span class="tag tag-adv">Advanced</span>: tickets appear on a tablet or screen in the kitchen, with a timer.</li>
+          <li><strong>Screen and printed ticket:</strong> both at once.</li>
+        </ul>
+        <p class="tip"><strong>Who decides:</strong> the Admin, in <b>Settings → Printing &amp; kitchen</b>. If the kitchen screen says <b>The kitchen screen is off</b>, orders are going to the printer instead.</p>
+      </article>
+
+      <article class="sc" id="kitchen-screen" data-roles="kitchen owner">
+        <h3>Work the kitchen screen <span class="tag tag-adv">Advanced</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-kitchen">Kitchen</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/kitchen.webp" width="1280" height="889" loading="lazy" decoding="async" alt="Kitchen screen with tickets for tables T2, T5, T4, T7 and counter orders 001 and 002, each with Start or Ready" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>New orders appear by themselves, oldest first. Each ticket shows the table (T4) or counter number (001), the time it has waited, the items, options (+ Medium) and notes (<em>warm it up</em>).</li>
+          <li>Tap <b>Start</b> when you begin cooking. The ticket says <b>Preparing</b>.</li>
+          <li>Tap <b>Ready</b> when it is done. It says <b>Ready for pickup</b> and the number goes to the customer display.</li>
+          <li>A ticket turns <strong>amber</strong>, then <strong>red</strong>, when it waits too long.</li>
+          <li>Use <b>All</b>, <b>New</b>, <b>Preparing</b>, <b>Ready</b> to filter. Tap <b>Sound off</b> to switch the chime on.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> ready tickets leave the screen when the counter marks the order <b>Collected</b>, or the waiter taps <b>Served</b>. Took one off by mistake? <b>Recall last served</b> brings it back.</p>
+      </article>
+
+      <article class="sc" id="kitchen-more" data-roles="kitchen">
+        <h3>A table ordered more, or something was cancelled</h3>
+        <ul class="who" aria-label="For"><li class="rc r-kitchen">Kitchen</li></ul>
+        <ul class="plain">
+          <li>Extra items for the same table come as a <strong>new ticket</strong> with only the new items.</li>
+          <li>Advance orders arrive before pickup time with <b>Pickup</b> and the customer’s name in bold.</li>
+          <li>A cancelled order disappears from the screen. A printed KOT does not change, so the counter will tell you.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="gsec" id="stock" data-roles="store owner">
+      <h2>Stock (Store manager and Admin) <span class="tag tag-pro">Pro</span></h2>
+      <p class="sec-lede">Stock comes off by itself when a bill is paid, using each item’s recipe. Your job is to record what comes in, what goes to waste, and what is really on the shelf.</p>
+
+      <article class="sc" id="ingredients" data-roles="store owner">
+        <h3>Add ingredients</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-store">Store manager</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/stock-sm.webp" width="1280" height="889" loading="lazy" decoding="async" alt="Stock page for the Store manager: tabs Stock, Purchases, Purchase orders, Returns, Stock count, Suppliers and dues, Recipes, Moves, My requests" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Stock</b> and press <b>+ Ingredient</b>.</li>
+          <li>Type the <b>Name</b>, pick the <b>Unit</b>: grams (g), millilitres (ml) or pieces (pcs). Set the <b>Cost</b> and <b>Reorder when at or below</b>.</li>
+          <li>Press <b>Save</b>. A Store manager adds the opening stock with a <a href="#stock-count">stock count</a> afterwards.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> <b>Low</b> and <b>Below zero</b> badges show what to reorder. Only an Admin can change an ingredient’s cost later.</p>
+      </article>
+
+      <article class="sc" id="recipes" data-roles="store owner">
+        <h3>Recipes: what each item uses</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-store">Store manager</li></ul>
+        <ol class="gsteps">
+          <li>Open <b>Stock → Recipes</b> and press <b>Add recipe</b> (or <b>Edit recipe</b>) on an item.</li>
+          <li>Press <b>+ Ingredient</b> for each one and type the quantity for <strong>one</strong> item (for example Cappuccino: 200 ml Milk, 18 g Coffee beans). Press <b>Save recipe</b>.</li>
+          <li>Under <b>Modifier recipes</b>, set extras per option, for example Oat milk: −150 ml Milk, +150 ml Oat milk.</li>
+        </ol>
+        <p class="tip"><strong>Store manager:</strong> recipes are read-only unless the Admin ticks <b>Store manager can edit recipes</b> in <b>Stock → Approvals</b>.</p>
+      </article>
+
+      <article class="sc" id="purchase" data-roles="store owner">
+        <h3>Goods arrived: record a purchase with the bill photo</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-store">Store manager</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/stock-purchase.webp" width="592" height="608" loading="lazy" decoding="async" alt="New purchase window with supplier, bill number, date, a line for 10000 ml milk costing 620 rupees and a bill photo field" style="max-width:min(100%,592px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Stock → Purchases</b> and press <b>+ Purchase</b>.</li>
+          <li>Pick the <b>Supplier</b>, type the <b>Bill no</b> and <b>Date</b>.</li>
+          <li>For each line pick the ingredient, the quantity in its unit (10 L milk = 10000 ml) and the line total in ₹. <b>+ Line</b> adds another.</li>
+          <li>Take or attach the <b>Bill photo or PDF (optional)</b>. Press <b>Save purchase</b>.</li>
+        </ol>
+        <p class="tip"><strong>If it says “Waiting for Admin approval”:</strong> the bill is above the approval limit. Stock updates once the Admin approves; see <a href="#flow-stock">the approval flow</a>.</p>
+      </article>
+
+      <article class="sc" id="returns" data-roles="store owner">
+        <h3>Send goods back to the supplier</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-store">Store manager</li></ul>
+        <ol class="gsteps">
+          <li>Open <b>Stock → Returns</b> and press <b>+ Return to supplier</b>.</li>
+          <li>Pick the <b>Supplier</b>, the <b>Date</b>, the lines and the credit in ₹ (blank = current cost). Type the <b>Reason</b>.</li>
+          <li>Press <b>Save return</b>. The supplier’s due goes down.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="wastage" data-roles="store owner">
+        <h3>Milk spilt or food expired: wastage</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-store">Store manager</li></ul>
+        <ol class="gsteps">
+          <li>Open <b>Stock</b>, find the ingredient and press <b>Wastage</b>.</li>
+          <li>Type the quantity and the <b>Reason</b>, press <b>Save</b>.</li>
+          <li>For a correction that is not waste, use <b>Adjust</b> instead (minus to remove).</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="stock-count" data-roles="store owner">
+        <h3>Count the shelf: stock count</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-store">Store manager</li></ul>
+        <ol class="gsteps">
+          <li>Open <b>Stock → Stock count</b>. It lists each ingredient with its <b>Book stock</b>.</li>
+          <li>Type what you physically counted (leave blank to skip). The <b>Difference</b> shows straight away.</li>
+          <li>Add a <b>Note</b> (for example “Sunday closing count”) and press <b>Save count</b>. Differences are booked as adjustments.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="purchase-orders" data-roles="store owner">
+        <h3>Order from a supplier on WhatsApp</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-store">Store manager</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/stock-po.webp" width="1280" height="889" loading="lazy" decoding="async" alt="Purchase orders tab with + Purchase order and From low stock buttons" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Stock → Purchase orders</b> and press <b>+ Purchase order</b> (or <b>From low stock</b> to make drafts for everything low, one per supplier).</li>
+          <li>Check the lines and press <b>Save draft</b>.</li>
+          <li>Press <b>WhatsApp</b>: WhatsApp opens with the order typed for the supplier’s phone. Send it, then press <b>Mark sent</b>.</li>
+          <li>When the goods come, press <b>Receive</b>, check quantities and costs, add the bill photo and press <b>Save purchase</b>.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> with no phone saved for the supplier, pick the chat yourself in WhatsApp.</p>
+      </article>
+
+      <article class="sc" id="suppliers" data-roles="store owner">
+        <h3>Suppliers and what you owe them</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-store">Store manager</li></ul>
+        <figure class="gshot narrow"><img src="assets/shots/guide/stock-ledger.webp" width="592" height="1000" loading="lazy" decoding="async" alt="Supplier ledger with purchases, returns, paid and due, Record a payment and a list of entries" style="max-width:min(100%,592px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Stock → Suppliers &amp; dues</b>. <b>+ Supplier</b> adds a name, phone and GSTIN (optional).</li>
+          <li>The list shows each supplier’s due. Press <b>Ledger</b> to see purchases, returns and payments.</li>
+          <li>Paid the supplier? In the ledger, fill <b>Record a payment</b> (amount, method, date, UTR or cheque no in <b>Note</b>) and press <b>Save payment</b>.</li>
+          <li><b>Monthly purchases</b> totals by supplier and by ingredient, with CSV downloads.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="approvals" data-roles="owner">
+        <h3>Approve big stock entries (Admin)</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <ol class="gsteps">
+          <li>Open <b>Stock → Approvals</b>. Set <b>Store manager entries above (₹) need approval</b> (0 = every entry) and press <b>Save rules</b>.</li>
+          <li>Under <b>Waiting for approval</b>, press <b>Approve</b> or <b>Reject</b>.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="stock-admin" data-roles="owner">
+        <h3>Food cost, stock value and Excel import (Admin)</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/food.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Stock, Food cost: net sales, cost of goods sold and food cost percent, per item and per day" style="max-width:min(100%,1280px)"></figure>
+        <ul class="plain">
+          <li><b>Stock → Food cost</b>: cost of goods sold from recipes, and food cost % per item and per day.</li>
+          <li><b>Stock → Moves</b>: every stock change with who made it.</li>
+          <li><b>Stock → Excel import</b>: <b>Download template</b>, fill the <b>Ingredients</b> and <b>Recipes</b> sheets, <b>Check file</b>, then <b>Import now</b>. Stock is never overwritten; use a stock count.</li>
+          <li>A low-stock badge also appears on the Admin’s POS and <b>Today</b>.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="gsec" id="money" data-roles="owner ca">
+      <h2>Money and books</h2>
+
+      <article class="sc" id="today" data-roles="owner">
+        <h3>The owner’s Today screen</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/today.webp" width="1280" height="889" loading="lazy" decoding="async" alt="Today screen with sales, payment split, online platforms, open tables and a Needs attention list" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>The Admin lands on <b>Today</b> after logging in: sales, bills, cash and UPI split, online sales and open tables.</li>
+          <li><b>Needs attention</b> lists what is waiting for someone: opening cash not counted, online or table QR orders, stock approvals, low stock, accountant questions, licence, a failed backup, and the Z-report once the day is closed. Press <b>Open</b> on any line.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="expenses" data-roles="owner ca">
+        <h3>Record rent, salaries and bills <span class="tag tag-adv">Advanced</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-ca">Accountant</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/expenses.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Expenses page with a date range, + Expense, Export CSV and the list of expenses" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Expenses</b> and press <b>+ Expense</b>.</li>
+          <li>Fill <b>Date</b>, <b>Category</b>, <b>Amount (₹)</b>, <b>Paid by</b> and a <b>Note</b>. Attach a bill photo or PDF (up to 5 MB). Press <b>Save</b>.</li>
+          <li>Add your own categories on the <b>Categories</b> tab. <b>Export CSV</b> downloads the list.</li>
+        </ol>
+        <p class="tip"><strong>Accountant:</strong> you can see expenses but not change them.</p>
+      </article>
+
+      <article class="sc" id="profit" data-roles="owner ca">
+        <h3>See the profit <span class="tag tag-adv">Advanced</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-ca">Accountant</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/profit.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Expenses, Profit tab with net sales, cost of goods, expenses and profit, and a daily chart" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Expenses → Profit</b>. Pick <b>This month</b>, <b>Last month</b>, <b>This year</b> or your own dates, and <b>Daily</b> or <b>Monthly</b>.</li>
+          <li>It shows <b>Net sales</b> (without GST), <b>Cost of goods (COGS)</b> from recipes, <b>Expenses</b> and <b>Profit</b>.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="dashboard" data-roles="owner ca">
+        <h3>Dashboard: how the café is doing</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-ca">Accountant</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/dashboard.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Dashboard for the last 30 days with revenue, orders, average bill, and sales by hour" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Dashboard</b>. Pick <b>Today</b>, <b>Yesterday</b>, <b>7 days</b>, <b>30 days</b>, <b>90 days</b> or <b>Custom</b>.</li>
+          <li>See the totals compared with the period before, <b>Sales by hour</b>, <b>Busy times</b>, <b>What sells when</b>, best and slow items, order types and payment methods.</li>
+          <li><b>Export CSV</b> on each part downloads the numbers.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="reports" data-roles="owner ca">
+        <h3>Reports: daily, best sellers, staff, discounts, audit</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-ca">Accountant</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/rep-audit.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Reports page tabs: Cash drawer, Daily, Best sellers, Staff, Discounts and cancellations, Day-end, Audit log, GST" style="max-width:min(100%,1280px)"></figure>
+        <ul class="plain">
+          <li><b>Daily</b> and <b>Best sellers</b>: revenue, bills and average bill; top items by quantity and revenue.</li>
+          <li><b>Staff</b> <span class="tag tag-adv">Advanced</span>: bills taken and settled, discounts and cancellations per person.</li>
+          <li><b>Discounts &amp; cancellations</b> <span class="tag tag-adv">Advanced</span>: every one, with who and why.</li>
+          <li><b>Audit log</b> <span class="tag tag-adv">Advanced</span>: discounts, cancellations, setting and user changes.</li>
+          <li>Pick <b>Today</b>, <b>This week</b>, <b>This month</b> or dates; <b>Export CSV</b> downloads it. A 🔒 on a tab means it is not in your plan.</li>
+        </ul>
+      </article>
+
+      <article class="sc" id="gst-report" data-roles="owner ca">
+        <h3>GST and GSTR-1 files</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-ca">Accountant</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/rep-gst.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Reports, GST tab for a month with taxable value, CGST, SGST, B2C summary and HSN summary" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Reports → GST</b> and pick the <b>Month</b>.</li>
+          <li>Check the taxable value, CGST, SGST, the <b>B2C summary by rate</b> and the <b>HSN summary</b>.</li>
+          <li>Download <b>GSTR-1 B2C CSV</b> and <b>HSN summary CSV</b> for your return.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> Swiggy and Zomato bills are left out, because the platform pays GST on them (section 9(5)).</p>
+      </article>
+
+      <article class="sc" id="ca-export" data-roles="owner ca">
+        <h3>Send the month’s books to the CA</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-ca">Accountant</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/accounts-admin.webp" width="1280" height="889" loading="lazy" decoding="async" alt="Accounts page: Export for your CA with Month or Financial year, Excel and Tally options, password and Download ZIP" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Accounts</b>. Under <b>Export for your CA</b>, pick <b>Month</b> or <b>Financial year</b>.</li>
+          <li>Tick <b>Excel workbook (one sheet per file)</b> and, if your CA uses Tally, <b>Tally Prime XML</b> <span class="tag tag-pro">Pro</span>.</li>
+          <li>Optionally type a <b>Password</b> (at least 6 characters). Press <b>Download ZIP</b>.</li>
+        </ol>
+        <p class="tip"><strong>What is inside:</strong> the sales register, GSTR-1 tables, cancellations, discounts, Z-reports, expenses and purchases. No customer details. Admin: set <b>Tally ledger names</b> to match your Tally company.</p>
+      </article>
+
+      <article class="sc" id="ca-role" data-roles="ca">
+        <h3>What the Accountant can open <span class="tag tag-pro">Pro</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-ca">Accountant</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/accounts.webp" width="1280" height="889" loading="lazy" decoding="async" alt="Accounts page as the accountant, with the export and Bill queries" style="max-width:min(100%,1280px)"></figure>
+        <ul class="plain">
+          <li><b>Accounts</b> (your home screen): the export and your <b>Bill queries</b>.</li>
+          <li><b>Orders</b> for any date, <b>Dashboard</b>, <b>Reports</b> (including GST and the cash drawer), <b>Expenses</b> and <b>Stock</b>, all read-only.</li>
+          <li>Questions go to the Admin with <b>Ask about this bill</b>; see <a href="#flow-ca">the question flow</a>.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="gsec" id="owner" data-roles="owner">
+      <h2>Owner tools</h2>
+
+      <article class="sc" id="offers" data-roles="owner">
+        <h3>Make a combo, happy hour or buy-one-get-one <span class="tag tag-adv">Advanced</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/offer-editor.webp" width="1280" height="800" loading="lazy" decoding="async" alt="New combo editor with items to add, combo price, schedule days and times, and a display preview" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Offers</b> and press <b>+ Combo</b>, <b>+ Percent off</b>, <b>+ Buy X get Y</b> or <b>+ Display promo</b> (a slide for the customer display only).</li>
+          <li>Type the <b>Name</b> and what it includes: combo items and <b>Combo price (₹)</b>, the percent and categories, or what the customer buys and gets free.</li>
+          <li>Under <b>Schedule</b>, pick the <b>Days</b>, <b>From time</b> / <b>To time</b> (a happy hour) and dates.</li>
+          <li>Tick <b>Show on the customer display</b> and <b>Active</b>. Press <b>Save offer</b>.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> each offer shows <b>Live</b>, <b>Scheduled</b>, <b>Expired</b> or <b>Paused</b>. <b>Duplicate</b> makes a paused copy; <b>Archive</b> retires it.</p>
+      </article>
+
+      <article class="sc" id="customers" data-roles="owner cashier">
+        <h3>The customer list <span class="tag tag-pro">Pro</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/customers.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Customers page with name, phone, visits, spend, last visit and points" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Open <b>Customers</b> (shown when loyalty is on). Search by name or phone.</li>
+          <li>Tap a customer to see their history. The Admin can edit them, press <b>Adjust points</b>, or <b>Export CSV</b>.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="service-reports" data-roles="owner">
+        <h3>Feedback, shifts and attendance</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/shifts.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Service page, Shifts tab: staff clock-in and out times, hours, bills paid and sales, with flags like Late" style="max-width:min(100%,1280px)"></figure>
+        <ul class="plain">
+          <li><b>Service → Feedback</b> <span class="tag tag-pro">Pro</span>: average rating, by day, staff and item, and low ratings with comments.</li>
+          <li><b>Service → Shifts</b> <span class="tag tag-adv">Advanced</span>: each shift with hours, bills and sales, and flags like <b>Late</b> or <b>Still clocked in</b>.</li>
+          <li><b>Service → Attendance</b>: fix a missed clock-out, <b>Add record</b>, and set each person’s planned shift for the late/early flags. Changes go in the audit log.</li>
+        </ul>
+      </article>
+
+      <article class="sc" id="outlets" data-roles="owner">
+        <h3>More than one outlet: HQ reports <span class="tag tag-plus">Pro Plus</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/outlets.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Outlets page: register an outlet, import day files and the consolidated report" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li><strong>At each outlet:</strong> <b>Settings → Outlet &amp; cloud backup</b>, set an <b>Outlet code</b> and <b>Outlet name</b>, press <b>Save outlet</b>, and give the owner the <b>Outlet secret</b> once.</li>
+          <li><strong>At HQ:</strong> open <b>Outlets</b>, type the code, name and secret, press <b>Register</b>.</li>
+          <li>Each outlet sends its day file (<b>Export day file</b>, also written by the daily backup) on WhatsApp or email. At HQ drop the <b>.ttx</b> files on <b>Import day files</b>, or set a <b>Watched folder</b> and press <b>Scan now</b>.</li>
+          <li>The <b>Consolidated report</b> shows all outlets, with <b>Export CSV</b>.</li>
+        </ol>
+        <p class="tip"><strong>No server needed:</strong> the files are signed, so HQ knows they came from that outlet.</p>
+      </article>
+
+      <article class="sc" id="backups" data-roles="owner">
+        <h3>Backups</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/set-data.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Settings, Backups and data: Backup now, Download backup, daily backup time, keep last, extra folder and restore" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>TapTill backs up every day by itself. Set the time in <b>Settings → Backups &amp; data → Backup time</b> and how many to <b>Keep last</b>.</li>
+          <li>Add an <b>Extra backup folder</b> (a USB drive or a Google Drive / OneDrive folder) and press <b>Test folder</b>, then <b>Save backup settings</b>.</li>
+          <li><b>Backup now</b> makes one at once. <b>Download backup</b> saves a copy anywhere you like.</li>
+        </ol>
+        <p class="tip"><strong>If something goes wrong:</strong> <b>Today</b> shows “The last backup failed”. Check the extra folder (is the USB plugged in?).</p>
+      </article>
+
+      <article class="sc" id="restore" data-roles="owner">
+        <h3>Restore a backup</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <ol class="gsteps">
+          <li>Open <b>Settings → Backups &amp; data → Restore from backup</b>. Choose the file (and type its password for a <b>.ttbak</b> file).</li>
+          <li>Press <b>Check backup file</b>. TapTill shows its orders, last bill number, menu size and users.</li>
+          <li>Type <b>RESTORE</b> and press <b>Restore</b>. A safety copy of today’s data is saved first, then you log in again.</li>
+        </ol>
+        <p class="warn"><strong>Careful:</strong> this replaces all current data. Open tables at that moment are lost.</p>
+      </article>
+
+      <article class="sc" id="cloud" data-roles="owner">
+        <h3>Encrypted cloud backup <span class="tag tag-pro">Pro</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <ol class="gsteps">
+          <li>Install the Google Drive or OneDrive app on the computer.</li>
+          <li>In <b>Settings → Outlet &amp; cloud backup → Cloud backup</b>, press <b>Find Google Drive folder</b> or type the folder.</li>
+          <li>Choose a password of at least 10 characters, type it twice and press <b>Save cloud backup</b>. <b>Back up to cloud now</b> tests it.</li>
+        </ol>
+        <p class="warn"><strong>Keep the password safe.</strong> Without it the cloud copy cannot be opened, and nobody can recover it.</p>
+      </article>
+
+      <article class="sc" id="updates" data-roles="owner">
+        <h3>Install an update</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <ol class="gsteps">
+          <li>When the internet is on, TapTill looks for a new version by itself. The Admin sees a bar: <b>TapTill 2.x.x is available</b>. Your installed version is always shown at the bottom of the menu.</li>
+          <li>Open <b>Settings → Updates</b>. Read <b>What's new</b>, then press <b>Update now</b> and confirm.</li>
+          <li>TapTill downloads the update, checks it is genuine, backs up your data and installs it over the current version. It opens again by itself in a minute or two. Windows may ask “Allow this app to make changes?”: press <b>Yes</b>.</li>
+          <li>On an Android tablet, Android asks <b>Do you want to update this app?</b>: press <b>Update</b>. The first time, allow <b>Install unknown apps</b> for TapTill when asked.</li>
+          <li>No internet? Press <b>Check now</b> later, or download the new version from the TapTill website and install it over the old one: your data stays.</li>
+        </ol>
+        <p class="tip"><strong>Tip:</strong> update after closing the day, not during the rush.</p>
+      </article>
+
+      <article class="sc" id="palette" data-roles="owner cashier ca store">
+        <h3>Jump anywhere: the search box</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li></ul>
+        <figure class="gshot "><img src="assets/shots/guide/palette.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Search window with cash typed, showing Count cash and Switch user" style="max-width:min(100%,1280px)"></figure>
+        <ol class="gsteps">
+          <li>Press <span class="key">Ctrl</span> <span class="key">K</span> (<span class="key">Cmd</span> <span class="key">K</span> on a Mac) or tap <b>Search</b> in the menu.</li>
+          <li>Type a few letters (“cash”, “gst”, “user”) and press <span class="key">Enter</span>. It shows only what your role may open.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="gsec" id="help" data-roles="owner cashier waiter kitchen store ca">
+      <h2>Troubleshooting and questions</h2>
+
+      <article class="sc" id="forgot-pin" data-roles="owner cashier waiter kitchen store ca">
+        <h3>Forgot PIN, or “Too many tries”</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li></ul>
+        <ol class="gsteps">
+          <li><strong>Staff:</strong> ask the Admin. They open <b>Users</b>, press <b>Reset PIN</b> next to your name and type a new one twice.</li>
+          <li><strong>Too many tries:</strong> after 5 wrong PINs you wait 60 seconds. After 15 wrong PINs in 30 minutes the wait is 15 minutes. The message says how long.</li>
+          <li><strong>The only Admin forgot the PIN:</strong> contact your seller. They can reset it on a copy of your data file.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="not-allowed" data-roles="cashier waiter kitchen store ca">
+        <h3>“Your role can’t do this” or a missing button</h3>
+        <ul class="who" aria-label="For"><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li></ul>
+        <p>Each role sees only its own screens (see <a href="#roles-table">the roles table</a>). Ask the Admin, or ask a Cashier for payments and discounts. Order takers see <b>Your role can’t do this. Ask a cashier.</b> if they try to pay.</p>
+      </article>
+
+      <article class="sc" id="not-in-plan" data-roles="owner cashier waiter kitchen store ca">
+        <h3>“Available in your plan upgrade — contact your seller”</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li></ul>
+        <p>That feature is not in your licence. Nothing is lost: data you entered during the trial stays. The Admin can check <b>Settings → Licence → What your plan includes</b> and ask the seller for a higher plan or an add-on. A role your plan lacks shows <b>(Not in your plan)</b> on <b>Users</b>.</p>
+      </article>
+
+      <article class="sc" id="printer-help" data-roles="owner cashier">
+        <h3>The printer is not printing</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <ol class="gsteps">
+          <li>Check the printer is on, has paper and the lid is closed.</li>
+          <li>Make sure it is the <strong>default printer</strong> on the computer, and that Chrome or Edge is installed.</li>
+          <li>In <b>Settings → Printing &amp; kitchen</b>, check the <b>Paper width</b> and press <b>Print test receipt</b>.</li>
+          <li>Reprint the bill from <b>Orders → Reprint</b> once it works.</li>
+        </ol>
+        <p class="tip"><strong>KOTs from phones:</strong> they print on the counter computer. If the counter shows <b>… slips not printed — check printer</b>, fix the printer; TapTill must be open and someone logged in there.</p>
+      </article>
+
+      <article class="sc" id="item-unavailable" data-roles="cashier waiter owner">
+        <h3>An item says “Unavailable”</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
+        <p>Someone unticked <b>Available</b> on the <b>Menu</b> (for example it ran out). The Admin ticks it again to sell it.</p>
+      </article>
+
+      <article class="sc" id="offline" data-roles="owner cashier waiter kitchen store ca">
+        <h3>The internet is down</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li></ul>
+        <p>Keep working. Billing, KOT, printing, tables, the kitchen screen, reports and backups all run on the counter computer. Phones and tablets keep working over the café Wi-Fi router even without internet. Only Swiggy/Zomato orders and the cloud backup upload need internet; they catch up later.</p>
+      </article>
+
+      <article class="sc" id="phone-help" data-roles="owner waiter kitchen">
+        <h3>A phone or tablet can’t connect</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li></ul>
+        <ol class="gsteps">
+          <li>The phone must be on the <strong>café staff Wi-Fi</strong>, not the guest Wi-Fi or mobile data.</li>
+          <li>On the counter computer, TapTill must be open, and <b>Allow phones &amp; tablets on the Wi-Fi</b> must be ticked (after ticking it, restart TapTill).</li>
+          <li>Open the exact address shown in <b>Settings → Phones &amp; tablets</b>. If the computer’s Wi-Fi address changed, the address changes too.</li>
+          <li>A pairing code works 5 minutes, once. Press <b>Pair new device</b> for a fresh one. A removed device needs a new code.</li>
+          <li>At the limit of your plan, a new pairing is refused: <b>Remove</b> an old device first.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="phone-cert" data-roles="owner waiter">
+        <h3>Phone shows a “not secure” or certificate warning</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-waiter">Waiter</li></ul>
+        <p>TapTill makes its own secure certificate for the café. Either accept the browser warning once (<b>Advanced → Proceed</b>), or install the certificate: in <b>Settings → Phones &amp; tablets → Phone certificate</b> use <b>iPhone / iPad profile</b> or <b>Certificate file (Android, others)</b> and follow <b>How to install it</b>. The fingerprint must match on the phone.</p>
+      </article>
+
+      <article class="sc" id="licence-help" data-roles="owner cashier">
+        <h3>Licence ending, grace days and read-only</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <ul class="plain">
+          <li><strong>15 days before the end date</strong> a banner says <b>Licence ends on …</b> (<b>Hide for today</b> hides it).</li>
+          <li><strong>After the end date</strong> there are 7 grace days: <b>Licence expired — … days left before read-only</b>.</li>
+          <li><strong>Read-only:</strong> no new bills, payments or menu changes; POS shows the message instead of <b>Pay</b>. Reports, reprints, exports and backups still work. Nothing is deleted.</li>
+          <li><strong>Fix:</strong> the Admin sends the Installation ID to the seller and installs the new key in <b>Settings → Licence</b>. Billing works again at once.</li>
+        </ul>
+      </article>
+
+      <article class="sc" id="wrong-date" data-roles="owner cashier">
+        <h3>“Your computer’s date is wrong — fix the date and time”</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <p>TapTill stops billing when the computer’s clock goes back in time. Set the correct date, time and time zone (India) in the computer’s settings and reload TapTill.</p>
+      </article>
+
+      <article class="sc" id="new-computer" data-roles="owner">
+        <h3>Moving to a new computer</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <ol class="gsteps">
+          <li>On the old computer, close the day and press <b>Download backup</b> in <b>Settings → Backups &amp; data</b>. Copy the file to a USB drive.</li>
+          <li>Install TapTill on the new computer and create a temporary Admin.</li>
+          <li>Restore the backup (<a href="#restore">Restore a backup</a>). Your menu, bills and staff come back.</li>
+          <li>Send the new computer’s Installation ID to your seller. They issue a key with the same end date.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="support-file" data-roles="owner">
+        <h3>Sending a problem to your seller</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <p>Open <b>Settings → Help</b> and press <b>Create support file</b>. It has logs, version and technical settings, but no orders, customers, menu or prices. Send it with a short note of what happened.</p>
+      </article>
+    </section>
+
+    <section class="gsec" id="checklists" data-roles="owner cashier waiter kitchen store ca">
+      <h2>Training checklists</h2>
+      <p class="sec-lede">Sit with the new person and tick each line once they can do it alone. Ticks are saved in this browser only. <span class="print-hint">Printing shows the selected role’s checklist and steps, without pictures.</span></p>
+      <div class="btn-row cl-actions"><button type="button" class="btn btn-solid" id="print-btn">Print this role’s guide</button> <button type="button" class="btn btn-line" id="clear-ticks">Clear ticks</button></div>
+
+      <article class="sc checklist" id="check-owner" data-roles="owner">
+        <h3>An owner / Admin can…</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <ul class="ticks-list">
+          <li><label><input type="checkbox"> Install the licence key and find the Installation ID</label></li>
+          <li><label><input type="checkbox"> Set café details, GST, UPI ID and bill numbering</label></li>
+          <li><label><input type="checkbox"> Add categories, items, prices, veg marks and option groups</label></li>
+          <li><label><input type="checkbox"> Mark an item unavailable and back</label></li>
+          <li><label><input type="checkbox"> Add a person with a role and PIN, reset a PIN, turn someone off</label></li>
+          <li><label><input type="checkbox"> Choose KOT printing or kitchen screen, and print a test receipt</label></li>
+          <li><label><input type="checkbox"> Pair a phone, a kitchen screen and a customer display</label></li>
+          <li><label><input type="checkbox"> Read the Today screen and act on each “Needs attention” line</label></li>
+          <li><label><input type="checkbox"> Count the cash and check over / short on Day-end; reopen a day</label></li>
+          <li><label><input type="checkbox"> Approve or reject stock entries from the Store manager</label></li>
+          <li><label><input type="checkbox"> Reply to the accountant’s bill questions</label></li>
+          <li><label><input type="checkbox"> Read Daily, Staff, Discounts &amp; cancellations and Audit log reports</label></li>
+          <li><label><input type="checkbox"> Download the CA export and the GSTR-1 files</label></li>
+          <li><label><input type="checkbox"> Make an offer, take a backup, restore one, and install an update</label></li>
+        </ul>
+        <p class="handoff"><strong>Receives from:</strong> cashier (Z-report, cash count), store manager (approvals), accountant (questions). <strong>Hands to:</strong> everyone (setup, PINs, fixes).</p>
+      </article>
+
+      <article class="sc checklist" id="check-cashier" data-roles="cashier">
+        <h3>A new cashier can…</h3>
+        <ul class="who" aria-label="For"><li class="rc r-cashier">Cashier</li></ul>
+        <ul class="ticks-list">
+          <li><label><input type="checkbox"> Log in with their own PIN and use Switch user</label></li>
+          <li><label><input type="checkbox"> Count and save the opening cash</label></li>
+          <li><label><input type="checkbox"> Bill a counter order by tapping and by typing</label></li>
+          <li><label><input type="checkbox"> Add an item with size, add-ons and a kitchen note</label></li>
+          <li><label><input type="checkbox"> Open a table, add items, save, and print the bill</label></li>
+          <li><label><input type="checkbox"> Take cash, UPI (wait for the money) and card</label></li>
+          <li><label><input type="checkbox"> Split one bill between cash and UPI</label></li>
+          <li><label><input type="checkbox"> Give a discount and remove it</label></li>
+          <li><label><input type="checkbox"> Take a delivery order and an advance order</label></li>
+          <li><label><input type="checkbox"> Accept or reject online and table QR orders</label></li>
+          <li><label><input type="checkbox"> Find a customer by phone and redeem points</label></li>
+          <li><label><input type="checkbox"> Reprint a bill and cancel one with a reason</label></li>
+          <li><label><input type="checkbox"> Mark an order ready and collected</label></li>
+          <li><label><input type="checkbox"> Add a payout with a reason</label></li>
+          <li><label><input type="checkbox"> Close the day and print the Z-report</label></li>
+        </ul>
+        <p class="handoff"><strong>Receives from:</strong> waiters (tables to bill, “bill asked”), kitchen (ready orders), guests (QR orders, calls), platforms (online orders). <strong>Hands to:</strong> kitchen (counter KOTs), owner (Z-report, cash count).</p>
+      </article>
+
+      <article class="sc checklist" id="check-waiter" data-roles="waiter">
+        <h3>A new waiter / order taker can…</h3>
+        <ul class="who" aria-label="For"><li class="rc r-waiter">Waiter</li></ul>
+        <ul class="ticks-list">
+          <li><label><input type="checkbox"> Clock in and out on the login screen</label></li>
+          <li><label><input type="checkbox"> Log in on the waiter phone with their own PIN</label></li>
+          <li><label><input type="checkbox"> Open a free table and take the order</label></li>
+          <li><label><input type="checkbox"> Pick sizes and add a kitchen note</label></li>
+          <li><label><input type="checkbox"> Press Send to kitchen and check the KOT came out</label></li>
+          <li><label><input type="checkbox"> Add more items to the same table</label></li>
+          <li><label><input type="checkbox"> Read the kitchen chip: In kitchen, Preparing, Ready</label></li>
+          <li><label><input type="checkbox"> Tap Seat guests, Served and Bill asked on Tables</label></li>
+          <li><label><input type="checkbox"> Answer a “Calling waiter” and tap Done</label></li>
+          <li><label><input type="checkbox"> Remove an item and tell the kitchen</label></li>
+        </ul>
+        <p class="handoff"><strong>Receives from:</strong> guests (orders, calls), kitchen (Ready). <strong>Hands to:</strong> kitchen (KOT / ticket), cashier (bill asked, payment).</p>
+      </article>
+
+      <article class="sc checklist" id="check-kitchen" data-roles="kitchen">
+        <h3>New kitchen staff can…</h3>
+        <ul class="who" aria-label="For"><li class="rc r-kitchen">Kitchen</li></ul>
+        <ul class="ticks-list">
+          <li><label><input type="checkbox"> Clock in and out on the login screen</label></li>
+          <li><label><input type="checkbox"> Read a KOT: table or number, items, options, notes</label></li>
+          <li><label><input type="checkbox"> Turn the kitchen screen sound on</label></li>
+          <li><label><input type="checkbox"> Tap Start, then Ready</label></li>
+          <li><label><input type="checkbox"> Spot amber and red tickets and cook those first</label></li>
+          <li><label><input type="checkbox"> Use Recall last served</label></li>
+          <li><label><input type="checkbox"> Recognise an advance order with its pickup time</label></li>
+        </ul>
+        <p class="handoff"><strong>Receives from:</strong> waiters and cashiers (KOTs / tickets), accepted QR and online orders. <strong>Hands to:</strong> waiters (Ready for the table), customer display (ready numbers).</p>
+      </article>
+
+      <article class="sc checklist" id="check-store" data-roles="store">
+        <h3>A new store manager can…</h3>
+        <ul class="who" aria-label="For"><li class="rc r-store">Store manager</li></ul>
+        <ul class="ticks-list">
+          <li><label><input type="checkbox"> Add an ingredient with the right unit (g, ml, pcs)</label></li>
+          <li><label><input type="checkbox"> Record a purchase with the bill photo</label></li>
+          <li><label><input type="checkbox"> Record wastage and an adjustment with a reason</label></li>
+          <li><label><input type="checkbox"> Do a stock count</label></li>
+          <li><label><input type="checkbox"> Make a purchase order and send it on WhatsApp, then receive it</label></li>
+          <li><label><input type="checkbox"> Return goods to a supplier</label></li>
+          <li><label><input type="checkbox"> Record a payment to a supplier and read the dues</label></li>
+          <li><label><input type="checkbox"> Check My requests for approvals</label></li>
+        </ul>
+        <p class="handoff"><strong>Receives from:</strong> suppliers (goods, bills), owner (approvals, recipe permission). <strong>Hands to:</strong> owner (entries above the limit).</p>
+      </article>
+
+      <article class="sc checklist" id="check-ca" data-roles="ca">
+        <h3>The accountant can…</h3>
+        <ul class="who" aria-label="For"><li class="rc r-ca">Accountant</li></ul>
+        <ul class="ticks-list">
+          <li><label><input type="checkbox"> Log in and open Accounts</label></li>
+          <li><label><input type="checkbox"> Download the monthly ZIP (Excel, Tally if used, with a password)</label></li>
+          <li><label><input type="checkbox"> Download GSTR-1 B2C and HSN CSVs from Reports → GST</label></li>
+          <li><label><input type="checkbox"> Find any bill on Orders by date or bill number</label></li>
+          <li><label><input type="checkbox"> Ask a question on a bill and read the reply</label></li>
+          <li><label><input type="checkbox"> Read expenses, profit, the cash drawer and day-end figures</label></li>
+        </ul>
+        <p class="handoff"><strong>Receives from:</strong> owner (replies, the books). <strong>Hands to:</strong> owner (bill questions).</p>
+      </article>
+    </section>
+
+    <section class="gsec" id="shortcuts" data-roles="owner cashier waiter">
+      <h2>Keyboard shortcuts</h2>
+      <article class="sc" id="shortcut-table" data-roles="owner cashier waiter">
+        <h3>On the POS and everywhere</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
+        <div class="table-scroll"><table class="gtable keys">
+          <thead><tr><th scope="col">Key</th><th scope="col">What it does</th></tr></thead>
+          <tbody>
+            <tr><td>Letters <span class="key">A</span>–<span class="key">Z</span></td><td>Start searching items</td></tr>
+            <tr><td><span class="key">1</span>–<span class="key">9</span></td><td>Add the numbered tile (in a window: pick that option)</td></tr>
+            <tr><td><span class="key">↑</span> <span class="key">↓</span> <span class="key">Enter</span></td><td>Move the highlight and add it</td></tr>
+            <tr><td><span class="key">+</span> <span class="key">-</span></td><td>Quantity of the last line up or down</td></tr>
+            <tr><td><span class="key">Del</span></td><td>Remove the last line</td></tr>
+            <tr><td><span class="key">Esc</span></td><td>Clear the search, close a window, or clear the order</td></tr>
+            <tr><td><span class="key">Ctrl</span>+<span class="key">E</span></td><td>Options or note for the last line</td></tr>
+            <tr><td><span class="key">F1</span></td><td>Back to the search box (on Tables: go to POS)</td></tr>
+            <tr><td><span class="key">F2</span></td><td>Counter order</td></tr>
+            <tr><td><span class="key">F3</span></td><td>Dine-in: pick a table</td></tr>
+            <tr><td><span class="key">F4</span></td><td>Delivery details</td></tr>
+            <tr><td><span class="key">F6</span></td><td>Last counter order is ready (customer display)</td></tr>
+            <tr><td><span class="key">F7</span></td><td>Print the bill of an open table</td></tr>
+            <tr><td><span class="key">F8</span></td><td>Discount</td></tr>
+            <tr><td><span class="key">F9</span></td><td>Pay (or Book an advance order)</td></tr>
+            <tr><td><span class="key">S</span> (in Payment)</td><td>Split between methods</td></tr>
+            <tr><td><span class="key">F10</span></td><td>Advance order</td></tr>
+            <tr><td><span class="key">Ctrl</span>+<span class="key">S</span></td><td>Save the table / Send to kitchen</td></tr>
+            <tr><td><span class="key">Ctrl</span>+<span class="key">K</span></td><td>Search screens, settings and actions</td></tr>
+            <tr><td><span class="key">/</span></td><td>Jump to the search box on lists (Orders, Customers)</td></tr>
+          </tbody>
+        </table></div>
+        <p class="tip"><strong>On a Mac:</strong> <span class="key">Cmd</span> works instead of <span class="key">Ctrl</span>. Hold <span class="key">fn</span> if F keys change brightness or volume.</p>
+      </article>
+    </section>
+
+    <div class="guide-end">
+      <p>Still stuck? Message the TapTill developer on WhatsApp.</p>
+      <div class="btn-row"><a class="btn btn-wa" href="https://wa.me/918409718693?text=Hi%20Praveen%2C%20I%20have%20a%20question%20about%20using%20TapTill.">WhatsApp for help</a> <a class="btn btn-line" href="tour.html">Take the tour</a></div>
+    </div>
+  </main>
+</div>
+
+<a class="to-top" href="#top-of-guide" id="to-top" aria-label="Back to top">↑ Top</a>
+<div class="g-toast" id="g-toast" role="status" aria-live="polite"></div>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>TapTill, offline POS for cafés and small restaurants. Your café’s data stays in your café.</span>
+    <nav aria-label="Footer"><a href="./">Home</a><a href="tour.html">Tour</a><a href="guide.html">Guide</a><a href="download.html">Download</a><a href="brochure.pdf">Brochure (PDF)</a><a href="./#contact">Contact</a></nav>
+  </div>
+</footer>
+<script src="assets/guide.js" defer></script>
+</body>
+</html>

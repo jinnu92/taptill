@@ -267,14 +267,15 @@ table.plans { width: 100%; border-collapse: collapse; font-size: 16px; }
 .page-head .wrap { padding-top: clamp(36px, 5vw, 64px); padding-bottom: clamp(36px, 5vw, 64px); }
 .page-head h1 { font-size: clamp(36px, 5vw, 56px); font-weight: 800; color: #fff; letter-spacing: -0.03em; }
 .page-head p { color: var(--on-roast-muted); margin-top: 12px; max-width: 60ch; font-size: 18px; }
-.dl-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.dl-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+@media (max-width: 1200px) { .dl-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .dl-card { background: var(--paper); border: 1px solid var(--line-strong); border-radius: 14px; padding: 24px; display: flex; flex-direction: column; gap: 12px; }
 .dl-card h2 { font-size: 24px; }
 .dl-card .who { color: var(--muted); font-size: 15.5px; }
 .dl-card code { font-family: var(--mono); font-size: 13.5px; background: var(--stone); padding: 3px 6px; border-radius: 5px; word-break: break-all; }
 .dl-card .btn { margin-top: auto; }
 @media (max-width: 900px) { .dl-grid { grid-template-columns: 1fr; } }
-.install { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; }
+.install { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
 .install h3 { font-size: 22px; margin-bottom: 10px; }
 .install ol { padding-left: 22px; margin: 0; }
 .install li { margin-bottom: 10px; }
