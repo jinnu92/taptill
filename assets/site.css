@@ -138,6 +138,9 @@ p { margin: 0; }
 .ticks b { font-weight: 700; }
 .tag { display: inline-block; font-size: 12.5px; font-weight: 700; padding: 1px 8px; border-radius: 99px; background: var(--crema); color: var(--espresso); vertical-align: 2px; margin-left: 4px; white-space: nowrap; }
 .tag.basic { background: #e3f1f4; color: #0b5c72; }
+.tag.tag-adv { background: #e3f1f4; color: #0b5c72; }
+.tag.tag-pro { background: var(--crema); color: var(--espresso); }
+.tag.tag-plus { background: var(--saffron-soft); color: var(--saffron-ink); }
 .tag.new { background: var(--saffron-soft); color: var(--saffron-ink); }
 .shots { display: grid; gap: 16px; }
 .shots.two { grid-template-columns: 1fr 1fr; align-items: start; }
@@ -178,13 +181,30 @@ p { margin: 0; }
 @media (max-width: 600px) { .more-grid { grid-template-columns: 1fr; } }
 
 /* ---------- plans ---------- */
-.plans-wrap { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 32px; align-items: start; }
-.table-scroll { overflow-x: auto; border-radius: 12px; border: 1px solid var(--line-strong); background: var(--paper); }
+.plans-wrap { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; align-items: start; }
+.plans-wrap > div:last-child { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: start; }
+.plans-wrap > div:last-child .always { margin-top: 0; }
+.table-scroll { position: relative; overflow-x: auto; border-radius: 12px; border: 1px solid var(--line-strong); background: var(--paper); }
 table.plans { width: 100%; border-collapse: collapse; font-size: 16px; }
 .plans th, .plans td { padding: 10px 16px; text-align: left; border-bottom: 1px solid var(--line); }
 .plans thead th { background: var(--espresso); color: #fff; font-size: 18px; vertical-align: bottom; }
 .plans thead th small { display: block; font-weight: 500; font-size: 14px; color: #f0dccd; }
-.plans th:nth-child(n+2), .plans td:nth-child(n+2) { text-align: center; width: 92px; }
+.plans th:nth-child(n+2), .plans td:nth-child(n+2) { text-align: center; min-width: 112px; }
+.plans th:first-child, .plans td:first-child { min-width: 220px; }
+.plans thead th small { white-space: normal; line-height: 1.3; }
+.plans tbody th small { font-weight: 400; color: var(--muted); }
+.plans td small { color: var(--muted); }
+.plans td.addon { color: var(--saffron-ink); font-size: 14px; font-weight: 600; }
+.plans tbody th[scope="row"], .plans thead th:first-child { position: sticky; left: 0; z-index: 1; background: var(--paper); box-shadow: 1px 0 0 var(--line); }
+.plans thead th:first-child { background: var(--espresso); }
+.plans tr.group th { position: static; box-shadow: none; }
+.plans tr.group th { text-align: left; }
+.addons-note { margin-top: 8px; color: var(--muted); font-size: 15.5px; }
+@media (max-width: 600px) {
+  .plans th, .plans td { padding: 8px 10px; font-size: 14.5px; }
+  .plans th:first-child, .plans td:first-child { min-width: 150px; max-width: 150px; }
+  .plans th:nth-child(n+2), .plans td:nth-child(n+2) { min-width: 96px; }
+}
 .plans tbody th { font-weight: 500; }
 .plans tr.group th { background: var(--crema); color: var(--espresso); font-weight: 700; font-size: 15px; padding-top: 8px; padding-bottom: 8px; }
 .plans tr:last-child th, .plans tr:last-child td { border-bottom: 0; }
@@ -198,7 +218,7 @@ table.plans { width: 100%; border-collapse: collapse; font-size: 16px; }
 .always h3 { font-size: 18px; }
 .always ul { margin: 10px 0 0; padding-left: 20px; color: var(--muted); font-size: 15.5px; }
 .always li { margin-bottom: 4px; }
-@media (max-width: 900px) { .plans-wrap { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .plans-wrap { grid-template-columns: minmax(0, 1fr); } }
 
 /* ---------- steps (a real sequence) ---------- */
 .steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; counter-reset: s; }

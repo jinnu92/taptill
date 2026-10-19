@@ -17,7 +17,7 @@
 
 **Your café’s data stays in your café.** TapTill is installed on the computer at your counter. Sales, menu and customer details are stored there, and nothing is uploaded unless you turn on cloud backup or online orders. Billing, the kitchen, printing and reports keep running when the internet is down, and TapTill takes no commission on your sales. Fast touch and keyboard billing, GST bills, KOT, tables, offers, loyalty, stock and daily reports, in one app.
 
-**Try it free for 14 days**: every Pro feature, no key, no card, no sign-up.
+**Try it free for 14 days**: every feature, no key, no card, no sign-up.
 
 ## Download
 
@@ -55,7 +55,7 @@ TapTill is new and not yet signed with a paid publisher certificate, so Windows 
 - **Your café’s data stays in your café.** Sales, menu and customer details are stored on your own computer. TapTill doesn’t send your sales data anywhere; nothing is uploaded unless you turn on cloud backup or online orders.
 - **Works without internet.** Billing, the kitchen, printing and reports keep running when the internet is down.
 - **No commission on your sales.** No per-order or transaction fees charged by TapTill.
-- **Pay only for the features you use.** Basic or Pro, and extra features switched on one at a time with an activation key.
+- **Pay only for the features you use.** Five plans (Basic, Advanced, Pro, Pro Plus, Enterprise), and add-ons for a lower plan.
 - **You own your data.** Export reports and take full backups any time. Encrypted cloud backup is optional and protected by your own password.
 - **Staff access is controlled.** Each person has their own PIN and role, and an audit log records discounts, cancellations and changes.
 - **Local, personal support** from the developer in Haryana, on WhatsApp.
@@ -69,14 +69,14 @@ TapTill is new and not yet signed with a paid publisher certificate, so Windows 
 
 ## Features
 
-Features marked **(Pro)** come with the Pro plan. Everything else is in both plans.
+A tag shows the lowest plan with the feature: **(Advanced)**, **(Pro)** or **(Pro Plus)**. Features without a tag are in every plan.
 
 ### Billing at the counter
 - Counter, dine-in and delivery orders from one screen, by touch or keyboard
 - Modifiers and variants (sizes, add-ons, kitchen notes), printed on the KOT and bill
 - Split payment across cash, UPI and card
 - UPI QR on the bill and customer display, with the exact amount
-- Advance orders with pickup time and advance payment (Pro)
+- Advance orders with pickup time and advance payment (Advanced)
 - Print the bill before payment, discounts by amount or percent, audit log
 
 ### GST bills, tax invoice and GSTR-1
@@ -92,13 +92,13 @@ Features marked **(Pro)** come with the Pro plan. Everything else is in both pla
 - Table service status: seated, ordered, served, bill requested, with timers (Pro)
 - Table QR self-ordering on the café Wi-Fi; staff accept each order, guests only see their own table (Pro)
 - KOT printed, on a kitchen screen, or both; only new items go on the next KOT
-- Kitchen screen with Start and Ready, amber and red timers (Pro)
-- Customer display on any TV with offers and ready order numbers (Pro), and a menu board mode (Pro)
+- Kitchen screen with Start and Ready, amber and red timers (Advanced)
+- Customer display on any TV with offers and ready order numbers (Advanced), and a menu board mode (Pro)
 
 ![Kitchen screen with tickets and timers](assets/shots/kitchen.webp)
 
 ### Offers, loyalty and feedback
-- Offers and combos: fixed-price combos, happy hours, buy X get Y with a free-item suggestion, display promos (Pro)
+- Offers and combos: fixed-price combos, happy hours, buy X get Y with a free-item suggestion, display promos (Advanced)
 - Customer loyalty with points or stamps, looked up by phone number at the till (Pro)
 - Birthday and anniversary offers (Pro), customer list with history and CSV export
 - Feedback and ratings from a QR on the bill, with reports by day, item and staff (Pro)
@@ -108,9 +108,13 @@ Features marked **(Pro)** come with the Pro plan. Everything else is in both pla
 ### Reports, cash drawer and profit
 - Dashboard for today, 7, 30 or 90 days or any dates, compared with the period before
 - What sells when (morning, afternoon, evening, night) and a busy-hours heatmap
-- Best sellers, daily sales, staff sales, discounts and cancellations, day-end Z-report, CSV export
+- Advanced reports (Advanced): best sellers, daily sales, staff sales, discounts and cancellations, day-end Z-report, CSV export
 - Cash drawer: opening cash, payouts, expected cash, count by notes, UPI and card tick list
-- Expenses and profit, daily and monthly
+- Cash in and cash out: opening cash count at the start of the day, note count at day close
+- Owner's Today screen and quick search (Ctrl+K)
+- Expenses and profit, daily and monthly (Advanced)
+- CA export: monthly or yearly ZIP with the sales register, GSTR-1 (B2C and HSN), cancellations, discounts, Z-reports, expenses, purchases with supplier GSTIN and online orders kept separate; CSV and Excel, optional password, customer data never included
+- Accountant role and Tally XML export (Pro; an add-on for lower plans)
 
 ![Dashboard for the last 30 days](assets/shots/dashboard.webp)
 
@@ -118,54 +122,55 @@ Features marked **(Pro)** come with the Pro plan. Everything else is in both pla
 - Ingredients in g, ml or pieces with reorder levels and average cost
 - Recipes per item, including combos and modifiers; stock comes off when a bill is paid
 - Purchases from suppliers, wastage, stock count, low-stock list, food cost %, Excel import
+- Store manager role: purchases with a bill photo, returns, wastage, counts, purchase orders over WhatsApp and supplier dues; big entries wait for the owner's approval
 
 ### Staff, devices and online orders
-- Own PIN for every user, auto-lock, roles (Admin, Cashier, Order taker, Kitchen), audit log; more than 2 users needs Pro
-- Staff attendance: clock in and out with a PIN, hours and sales per shift (Pro)
-- Phones and tablets on the café Wi-Fi, paired once (Pro)
+- Own PIN for every user, auto-lock, roles (Admin, Cashier, Order taker, Kitchen, plus Store manager and Accountant on Pro), audit log; users per plan: Basic 2, Advanced 6, Pro 15, Pro Plus and Enterprise unlimited
+- Staff attendance: clock in and out with a PIN, hours and sales per shift (Advanced)
+- Phones and tablets on the café Wi-Fi, paired once (Advanced)
 - Swiggy and Zomato orders through an integration partner; needs your own partner account and internet for those orders (Pro)
 
 ### Safe and up to date
 - Daily automatic backups, plus a copy to USB or a cloud-synced folder; restore in a few clicks
 - Encrypted cloud backup with your own password, uploaded by your Google Drive or OneDrive app (Pro)
-- Multi-outlet reports from signed day files, no server needed (Pro)
+- Multi-outlet reports from signed day files, no server needed (Pro Plus)
 - Signed offline updates, with a backup taken first
 - Six colour themes or your own brand colour, light or dark
 - One-click help file for support, with no orders, customers, menu or prices in it
 
 ## Plans
 
-| Feature | Basic | Pro |
-|---|:---:|:---:|
-| **Always included:** POS billing, KOT and tables, menu, dashboard, daily backups, modifiers and variants, split payment, UPI QR, GST tax invoice and GSTR-1, signed updates | ✓ | ✓ |
-| Excel menu import | ✓ | ✓ |
-| Advanced reports | ✓ | ✓ |
-| Cash drawer | ✓ | ✓ |
-| Custom themes | ✓ | ✓ |
-| Expenses & profit | ✓ | ✓ |
-| More users (beyond 2) | – | ✓ |
-| Phones & tablets | – | ✓ |
-| Kitchen screen | – | ✓ |
-| Customer display and menu board | – | ✓ |
-| Offers & combos | – | ✓ |
-| Customer loyalty | – | ✓ |
-| Customer feedback | – | ✓ |
-| Inventory & recipe costing | – | ✓ |
-| Advance orders | – | ✓ |
-| Table QR self-ordering | – | ✓ |
-| Table service status | – | ✓ |
-| Staff attendance | – | ✓ |
-| Multi-outlet reports | – | ✓ |
-| Encrypted cloud backup | – | ✓ |
-| Swiggy/Zomato online orders (partner account needed) | – | ✓ |
+| Feature | Basic | Advanced | Pro | Pro Plus | Enterprise |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Who it is for | Small café, one counter | Busy café with staff and a kitchen | Control of stock, customers and books | Growing café, 2 or 3 outlets | Chains and franchises |
+| Users | 2 | 6 | 15 | Unlimited | Unlimited |
+| Paired phones and tablets | 0 | 2 | 5 | 10 | 10 per outlet |
+| Outlets in HQ reports | 1 | 1 | 1 | 3 | Unlimited |
+| Billing, tables, KOT, modifiers, split payment, UPI QR, GST invoice, GSTR-1 | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Day close, Z-report, cash drawer, cash in and out, dashboard, backups, updates, themes | ✓ | ✓ | ✓ | ✓ | ✓ |
+| CA export (CSV and Excel) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Phones and tablets, kitchen screen, customer display | – | ✓ | ✓ | ✓ | ✓ |
+| Offers and combos, Excel menu import, advanced reports | – | ✓ | ✓ | ✓ | ✓ |
+| Expenses and profit, advance orders, staff attendance | – | ✓ | ✓ | ✓ | ✓ |
+| Swiggy and Zomato orders (partner account needed) | – | add-on | ✓ | ✓ | ✓ |
+| Inventory, recipes, food cost, Store manager role, supplier ledger, purchase orders | – | – | ✓ | ✓ | ✓ |
+| Loyalty, feedback, table QR self-ordering, table service, menu board | – | – | ✓ | ✓ | ✓ |
+| Accountant role, bill questions, Tally XML | add-on | add-on | ✓ | ✓ | ✓ |
+| Encrypted cloud backup | add-on | add-on | ✓ | ✓ | ✓ |
+| Multi-outlet day files and HQ reports | – | – | – | ✓ (up to 3) | ✓ |
+| Custom branding on receipts and customer display | – | – | – | ✓ | ✓ |
+| Priority support and onboarding | – | – | – | ✓ | ✓ |
+| Central licence management for all outlets | – | – | – | – | ✓ |
 
-**Pricing:** contact us for pricing. Pay only for the features you use, with no commission on your sales. The 14-day trial includes every Pro feature.
+Add-ons can go on a lower plan: Swiggy and Zomato, Accountant and Tally, cloud backup, extra phones and tablets, and extra users.
+
+**Pricing:** contact us for pricing. Pay only for the features you use, with no commission on your sales. The 14-day trial includes every feature (Enterprise).
 
 ## How licensing works
 
 1. **Install** TapTill on your counter laptop.
-2. **Try** every Pro feature free for 14 days.
-3. **Choose** Basic or Pro, and send us the Installation ID from Settings → Licence.
+2. **Try** every feature free for 14 days.
+3. **Choose** a plan, and send us the Installation ID from Settings → Licence.
 4. **Activate** with the key we send back. It works offline and is tied to that laptop.
 5. **Renew** with a new key before the end date. Bills and menu stay as they are.
 
@@ -183,11 +188,11 @@ You get reminders from 15 days before the end date, then 7 days of grace. After 
 
 **Which printers work?** 80 mm or 58 mm USB thermal receipt printers that install as a normal printer on Windows or Mac. With Chrome or Edge installed, bills and KOTs print without a dialog.
 
-**Swiggy and Zomato?** On Pro, through an integration partner. You need your own partner account, and internet for those orders.
+**Swiggy and Zomato?** On Pro and above (an add-on on Advanced), through an integration partner. You need your own partner account, and internet for those orders.
 
-**Is my data safe?** Data stays on your laptop, with a daily backup (last 30 kept) and optional copies to USB or a cloud folder. Encrypted cloud backup (Pro) uses your password; without it the cloud copy cannot be opened. Uninstalling does not delete your data.
+**Is my data safe?** Data stays on your laptop, with a daily backup (last 30 kept) and optional copies to USB or a cloud folder. Encrypted cloud backup (Pro and above) uses your password; without it the cloud copy cannot be opened. Uninstalling does not delete your data.
 
-**Can waiters use phones?** On Pro. Pair each phone or tablet once from Settings; they work over your café Wi-Fi.
+**Can waiters use phones?** On Advanced and above. Pair each phone or tablet once from Settings; they work over your café Wi-Fi.
 
 **First launch shows a security warning?** Windows: **More info → Run anyway**. Mac: **System Settings → Privacy & Security → Open Anyway**. Only the first time.
 
