@@ -687,10 +687,21 @@
         <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
         <ol class="gsteps">
           <li>Guests sit down: tap <b>Seat guests</b> under a free table. The timer starts.</li>
-          <li>Food served: tap <b>Served</b>. It is highlighted when the kitchen has marked everything ready.</li>
+          <li>Food served: tap <b>Served</b>. It is highlighted when the kitchen has marked everything ready. If the kitchen is still cooking, TapTill asks first, because serving takes the order off the kitchen screen.</li>
           <li>Guest asks for the bill: tap <b>Bill asked</b> so the cashier sees it. <b>Clear bill request</b> undoes it.</li>
           <li>A bell like <b>Calling waiter</b> means a guest pressed a button on the table QR page. Go to them, then tap <b>Done: waiter</b> or <b>Done: bill</b>.</li>
         </ol>
+      </article>
+
+      <article class="sc" id="free-table" data-roles="cashier owner waiter">
+        <h3>Free a stuck table</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter (if allowed)</li></ul>
+        <ol class="gsteps">
+          <li>On <b>Tables</b>, tap <b>Free table</b> under an occupied table.</li>
+          <li>Nothing ordered: the table is free at once.</li>
+          <li>Items on the bill: choose <b>Keep as counter bill</b> (the guests will still pay: the bill waits under <b>Orders</b>, open it in POS to take payment) or <b>Cancel the order</b> (type a reason; it shows under cancelled bills with your name).</li>
+        </ol>
+        <p class="tip"><strong>Order takers:</strong> they only see <b>Free table</b> when the Admin turns on <b>Users → Order takers can free tables</b>.</p>
       </article>
 
       <article class="sc" id="print-bill" data-roles="cashier owner">
@@ -928,11 +939,12 @@
         <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-kitchen">Kitchen</li></ul>
         <figure class="gshot "><img src="assets/shots/guide/kitchen.webp" width="1280" height="889" loading="lazy" decoding="async" alt="Kitchen screen with tickets for tables T2, T5, T4, T7 and counter orders 001 and 002, each with Start or Ready" style="max-width:min(100%,1280px)"></figure>
         <ol class="gsteps">
-          <li>New orders appear by themselves, oldest first. Each ticket shows the table (T4) or counter number (001), the time it has waited, the items, options (+ Medium) and notes (<em>warm it up</em>).</li>
+          <li>The screen has three columns: <b>New</b>, <b>Preparing</b> and <b>Ready</b>. New orders appear by themselves, oldest first. Each ticket shows the table (T4) or counter number (001), the time it has waited, the items, options (+ Medium) and notes (<em>warm it up</em>).</li>
           <li>Tap <b>Start</b> when you begin cooking. The ticket says <b>Preparing</b>.</li>
           <li>Tap <b>Ready</b> when it is done. It says <b>Ready for pickup</b> and the number goes to the customer display.</li>
           <li>A ticket turns <strong>amber</strong>, then <strong>red</strong>, when it waits too long.</li>
-          <li>Use <b>All</b>, <b>New</b>, <b>Preparing</b>, <b>Ready</b> to filter. Tap <b>Sound off</b> to switch the chime on.</li>
+          <li><strong>Drag and drop:</strong> drag a ticket to the next column instead of tapping. On a tablet, press and hold the ticket for a moment, then drag. Moved one column too far? Tap <b>↩ Not started</b> or <b>↩ Not ready</b>.</li>
+          <li>When the waiter taps <b>Served</b> or a dine-in bill is paid, its tickets leave the screen by themselves. Tap <b>Sound off</b> to switch the chime on.</li>
         </ol>
         <p class="tip"><strong>Good to know:</strong> ready tickets leave the screen when the counter marks the order <b>Collected</b>, or the waiter taps <b>Served</b>. Took one off by mistake? <b>Recall last served</b> brings it back.</p>
       </article>
