@@ -3,7 +3,7 @@
   'use strict';
   var ROLE_KEY = 'tt-guide-role';
   var TICK_KEY = 'tt-guide-ticks';
-  var NAMES = { owner: 'an Owner / Admin', cashier: 'a Cashier', waiter: 'a Waiter / Order taker', kitchen: 'Kitchen staff', store: 'a Store manager', ca: 'an Accountant' };
+  var NAMES = { owner: 'an Owner / Admin', cashier: 'a Cashier', waiter: 'a Waiter / Order taker', kitchen: 'Kitchen staff', store: 'a Store manager', ca: 'an Accountant', rider: 'a Delivery rider' };
 
   function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* private mode: not remembered */ } }

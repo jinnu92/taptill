@@ -58,6 +58,7 @@
         <button type="button" class="role-btn r-kitchen" data-role="kitchen" aria-pressed="false"><span class="rb-name">Kitchen</span><span class="rb-sub">KOT and kitchen screen</span></button>
         <button type="button" class="role-btn r-store" data-role="store" aria-pressed="false"><span class="rb-name">Store manager</span><span class="rb-sub">Stock, purchases, suppliers</span></button>
         <button type="button" class="role-btn r-ca" data-role="ca" aria-pressed="false"><span class="rb-name">Accountant (CA)</span><span class="rb-sub">Books, GST, export</span></button>
+        <button type="button" class="role-btn r-rider" data-role="rider" aria-pressed="false"><span class="rb-name">Delivery rider</span><span class="rb-sub">Your own deliveries, on a phone</span></button>
         <button type="button" class="role-btn role-all" data-role="all" aria-pressed="true"><span class="rb-name">Show everything</span><span class="rb-sub">All roles</span></button>
       </div>
     </div>
@@ -74,7 +75,7 @@
   <aside class="toc" aria-label="Guide contents">
     <details class="toc-box" id="toc-box" open>
       <summary>Contents</summary>
-      <nav id="toc"><ol class="toc-list"><li><a href="#basics">Start here</a></li><li><a href="#team">How the team works together</a></li><li><a href="#setup">Getting started (Admin)</a></li><li><a href="#daily">Every day at the counter and tables</a></li><li><a href="#kitchen">Kitchen</a></li><li><a href="#stock">Stock (Store manager and Admin) Pro</a></li><li><a href="#money">Money and books</a></li><li><a href="#owner">Owner tools</a></li><li><a href="#help">Troubleshooting and questions</a></li><li><a href="#checklists">Training checklists</a></li><li><a href="#shortcuts">Keyboard shortcuts</a></li></ol></nav>
+      <nav id="toc"><ol class="toc-list"><li><a href="#basics">Start here</a></li><li><a href="#serving">How your café serves</a></li><li><a href="#team">How the team works together</a></li><li><a href="#setup">Getting started (Admin)</a></li><li><a href="#daily">Every day at the counter and tables</a></li><li><a href="#kitchen">Kitchen</a></li><li><a href="#stock">Stock (Store manager and Admin) Pro</a></li><li><a href="#money">Money and books</a></li><li><a href="#owner">Owner tools</a></li><li><a href="#help">Troubleshooting and questions</a></li><li><a href="#checklists">Training checklists</a></li><li><a href="#shortcuts">Keyboard shortcuts</a></li></ol></nav>
     </details>
   </aside>
   <main id="main" class="guide-main">
@@ -84,11 +85,11 @@
       <button type="button" class="btn btn-line" id="clear-search">Clear the search</button>
     </div>
 
-    <section class="gsec" id="basics" data-roles="owner cashier waiter kitchen store ca">
+    <section class="gsec" id="basics" data-roles="owner cashier waiter kitchen store ca rider">
       <h2>Start here</h2>
-      <article class="sc" id="what-is-taptill" data-roles="owner cashier waiter kitchen store ca">
+      <article class="sc" id="what-is-taptill" data-roles="owner cashier waiter kitchen store ca rider">
         <h3>What TapTill is, in one minute</h3>
-        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li></ul>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li><li class="rc r-rider">Rider</li></ul>
         <ul class="plain">
           <li>TapTill runs on the café’s main computer (the <b>counter computer</b>). Bills, menu and reports are stored there.</li>
           <li>It works without internet. Phones and tablets connect over the café Wi-Fi.</li>
@@ -97,28 +98,75 @@
         </ul>
         <p class="tip"><strong>Tip:</strong> Press <span class="key">Ctrl</span> <span class="key">K</span> (<span class="key">Cmd</span> <span class="key">K</span> on a Mac) to search for any screen or setting.</p>
       </article>
-      <article class="sc" id="plan-tags" data-roles="owner cashier waiter kitchen store ca">
+      <article class="sc" id="plan-tags" data-roles="owner cashier waiter kitchen store ca rider">
         <h3>What the plan tags mean</h3>
-        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li></ul>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li><li class="rc r-rider">Rider</li></ul>
         <p>Some features depend on the licence. A tag shows the lowest plan that has it: <span class="tag tag-adv">Advanced</span> <span class="tag tag-pro">Pro</span> <span class="tag tag-plus">Pro Plus</span>. No tag means every plan has it. The 14-day trial has everything.</p>
         <p>With a <b>Custom</b> licence, features are picked one by one. To see yours, the Admin opens <b>Settings → Licence → What your plan includes</b>.</p>
         <p class="tip"><strong>If something is missing:</strong> a locked screen says <b>Available in your plan upgrade — contact your seller</b>. Nothing is broken; ask the owner.</p>
       </article>
-      <article class="sc" id="roles-table" data-roles="owner cashier waiter kitchen store ca">
-        <h3>The seven roles and what each can do</h3>
-        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li></ul>
+      <article class="sc" id="roles-table" data-roles="owner cashier waiter kitchen store ca rider">
+        <h3>The eight roles and what each can do</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li><li class="rc r-rider">Rider</li></ul>
         <div class="table-scroll"><table class="gtable">
           <thead><tr><th scope="col">Role</th><th scope="col">Can do</th><th scope="col">Cannot do</th></tr></thead>
           <tbody>
             <tr><th scope="row">Admin</th><td>Everything: menu, offers, reports, settings, users, licence, backups, approvals.</td><td>—</td></tr>
             <tr><th scope="row">Cashier</th><td>Billing, payments, discounts, cancel a bill with a reason, today’s bills, payouts, mark orders ready, close the day, accept online and table QR orders, free a stuck table, watch the kitchen screen, hand orders over, send deliveries out and take riders’ cash.</td><td>Bills from other dates, menu, settings, most reports.</td></tr>
             <tr><th scope="row">Order taker</th><td>Takes table (dine-in) orders and sends them to the kitchen, watches the kitchen screen, hands ready orders over.</td><td>Payments, discounts, cancelling, counter or delivery orders.</td></tr>
-            <tr><th scope="row">Delivery</th><td>A rider, on their own phone: sees only the orders sent out with them, calls the customer, marks <b>Delivered</b> (and how the customer paid) or <b>Returned</b>.</td><td>Everything else.</td></tr>
+            <tr><th scope="row">Delivery <span class="tag tag-adv">Advanced</span></th><td>A rider, on their own phone: sees only the orders sent out with them, calls the customer, marks <b>Delivered</b> (and how the customer paid) or <b>Returned</b>.</td><td>Everything else.</td></tr>
             <tr><th scope="row">Kitchen</th><td>Only the kitchen screen: <b>Start</b> and <b>Ready</b>.</td><td>Everything else.</td></tr>
             <tr><th scope="row">Store manager <span class="tag tag-pro">Pro</span></th><td>Stock: suppliers, purchases, returns, wastage, counts, purchase orders, supplier dues. Big entries wait for the Admin.</td><td>Billing, sales, settings, food cost, approvals.</td></tr>
             <tr><th scope="row">Accountant <span class="tag tag-pro">Pro</span></th><td>Read-only books: bills (all dates), reports, GST, expenses, stock, cash drawer, the CA export, questions on bills.</td><td>Any change to bills, menu or settings.</td></tr>
           </tbody>
         </table></div>
+      </article>
+    </section>
+
+    <section class="gsec" id="serving" data-roles="owner cashier waiter">
+      <h2>How your café serves</h2>
+      <p class="sec-lede">Pick how guests order once. After that every table and order shows one button for the next step, and the <b>Alerts</b> bell tells the right person when it is their turn.</p>
+
+      <article class="sc" id="serving-setups" data-roles="owner cashier waiter">
+        <h3>The four setups</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
+        <div class="table-scroll"><table class="gtable">
+          <thead><tr><th scope="col">Setup</th><th scope="col">Who takes the order</th><th scope="col">Pay</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Waiters at tables</th><td>The waiter, at the table or on a phone.</td><td>At the end.</td></tr>
+            <tr><th scope="row">Order at counter, we serve</th><td>The cashier, on <b>Counter</b>. They pick the guest’s table before <b>Pay</b>.</td><td>First.</td></tr>
+            <tr><th scope="row">Cashier does everything</th><td>The cashier, from the table.</td><td>First or at the end, your choice.</td></tr>
+            <tr><th scope="row">Guests order by QR <span class="tag tag-pro">Pro</span></th><td>The guest, from the phone.</td><td>First or at the end, your choice.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Counter, takeaway, delivery and advance orders are not part of any area. They always work as pay at the counter and collect on <b>Pickup</b>.</p>
+      </article>
+
+      <article class="sc" id="serving-areas" data-roles="owner">
+        <h3>Areas, pay timing and extras (Admin)</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li></ul>
+        <ol class="gsteps">
+          <li>Open <b>Settings → How you serve</b>. A café starts with one area, <b>Dining</b>. Add, rename or hide areas (for example Indoor and Terrace) and move each table into one area.</li>
+          <li>Pick one of the four setups for each area. The same page has <b>Pay first</b> or <b>Pay at the end</b> for <b>Cashier does everything</b> and <b>Guests order by QR</b>. The other two have a fixed pay time.</li>
+          <li><b>Pay first or at the end:</b> in those two areas the cashier can change a single order in POS with the <b>Pay now</b> / <b>Pay later</b> button beside the order buttons. On a new order in a pay-first area, <b>Pay later</b> saves it as pay-at-the-end and sends it to the kitchen.</li>
+          <li><b>QR as an extra:</b> any area can also let guests order by QR on top of its own setup. It switches on by itself when you make QR codes for the tables, and you can turn it off here.</li>
+          <li><b>Print the bill as soon as a bill is asked for:</b> tick it to print at once on the counter printer. The cashier’s alert then says <b>Take payment</b>.</li>
+          <li>A change applies to new orders. Orders already open finish the way they started.</li>
+        </ol>
+        <p class="tip"><strong>Waiters and “Cashier does everything”:</strong> waiters do not see tables in those areas, even after you hire waiters. Switch the area to <b>Waiters at tables</b> once you have waiters.</p>
+        <p class="tip"><strong>Plans:</strong> the QR setup and QR extra need Table QR self-ordering <span class="tag tag-pro">Pro</span>. On a plan without it, a QR area works as <b>Cashier does everything</b>. Waiters taking orders on phones needs phones and tablets <span class="tag tag-adv">Advanced</span>; waiters can always use the counter computer.</p>
+      </article>
+
+      <article class="sc" id="serving-alerts" data-roles="owner cashier waiter">
+        <h3>The Alerts bell</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
+        <ol class="gsteps">
+          <li>The bell with a red count is on POS, Tables and waiter phones. It chimes once when something new arrives.</li>
+          <li>Each alert has one button: <b>Served</b> (food ready), <b>Print bill</b> or <b>Take payment</b> (bill asked), <b>Accept</b> or <b>Take payment</b> (QR order), <b>Done</b> (waiter called), <b>Handed over</b> (collect order ready), <b>Send out</b> (your own delivery is ready: opens <b>Pickup</b> to pick the rider) or <b>Picked up by rider</b> (a Swiggy or Zomato order ready). It disappears when done.</li>
+          <li>Waiters see alerts for their areas. Cashiers see everything. In a café with no waiters, cashiers get the <b>Served</b> alerts too.</li>
+          <li>An alert that waits too long chimes again and turns amber <span class="tag tag-pro">Pro</span>.</li>
+          <li>Serve, Bill asked and the Alerts bell are in every plan.</li>
+        </ol>
       </article>
     </section>
 
@@ -129,24 +177,26 @@
       <article class="sc hflow" id="flow-dine-in" data-roles="waiter kitchen cashier owner">
         <h3>Dine-in: from table order to free table</h3>
         <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li></ul>
+        <p class="tip"><strong>This is the “Waiters at tables” setup.</strong> Other setups change who takes the order or when it is paid; see <a href="#serving">How your café serves</a>. The button on each table card always shows the next step.</p>
         <ol class="lane" aria-label="Who does what, in order">
           <li class="ln r-waiter"><span class="ln-who">Waiter</span><span class="ln-do">Opens the table, adds items, <b>Send to kitchen</b></span></li>
           <li class="ln r-kitchen"><span class="ln-who">Kitchen</span><span class="ln-do">Gets a KOT or a ticket, taps <b>Start</b>, then <b>Ready</b></span></li>
-          <li class="ln r-waiter"><span class="ln-who">Waiter</span><span class="ln-do">Serves the food, adds more items if asked</span></li>
-          <li class="ln r-cashier"><span class="ln-who">Cashier</span><span class="ln-do"><b>Print bill</b>, then <b>Pay</b> (split or UPI)</span></li>
+          <li class="ln r-waiter"><span class="ln-who">Waiter</span><span class="ln-do">Alerts bell chimes: <b>Served</b></span></li>
+          <li class="ln r-waiter"><span class="ln-who">Waiter</span><span class="ln-do"><b>Bill asked</b>, the cashier is alerted</span></li>
+          <li class="ln r-cashier"><span class="ln-who">Cashier</span><span class="ln-do"><b>Print bill</b>, then <b>Take payment</b> (split or UPI)</span></li>
           <li class="ln r-cashier"><span class="ln-who">TapTill</span><span class="ln-do">The table shows <b>Free</b> again</span></li>
         </ol>
         <ol class="gsteps">
-          <li><strong>Waiter:</strong> on the phone or at the counter, open <b>Tables</b> and tap a free table (or press <span class="key">F3</span> in POS). Add the items and press <b>Send to kitchen</b> (<span class="key">Ctrl</span>+<span class="key">S</span>).</li>
+          <li><strong>Waiter:</strong> on the phone or at the counter, open <b>Tables</b> and tap a free table, then <b>Take order</b> (or press <span class="key">F3</span> in POS). Add the items and press <b>Send to kitchen</b> (<span class="key">Ctrl</span>+<span class="key">S</span>).</li>
           <li><strong>Kitchen, how they know:</strong> it depends on <b>Settings → Printing &amp; kitchen → Orders go to the kitchen by</b>:
             <ul><li><b>Printed ticket (KOT)</b>: a KOT prints on the counter printer. A KOT from a phone is printed by the counter computer, so TapTill must be open and logged in there.</li>
             <li><b>Kitchen screen</b>: a new ticket appears on the kitchen screen within a few seconds (with a chime when <b>Sound on</b>).</li>
             <li><b>Screen and printed ticket</b>: both.</li></ul></li>
           <li><strong>Kitchen:</strong> tap <b>Start</b> when cooking begins and <b>Ready</b> when the food is done. The ticket turns amber, then red, if it waits too long.</li>
-          <li><strong>Waiter, how they know:</strong> the table card on <b>Tables</b> shows <b>In kitchen</b>, <b>Preparing</b> or <b>Ready</b>. With table service <span class="tag tag-pro">Pro</span> the <b>Served</b> button lights up when everything is ready; tap <b>Served</b> after serving. If a customer display is used, the table name shows under <b>READY</b>.</li>
-          <li><strong>More items:</strong> open the same table again, add the items and press <b>Send to kitchen</b>. Only the new items go on the next KOT or ticket.</li>
-          <li><strong>Bill:</strong> the guest asks for the bill (or taps <b>Ask for bill</b> on the table QR page). The waiter taps <b>Bill asked</b> on <b>Tables</b> so the counter can see it. The cashier opens the table in POS and presses <b>Print bill</b> (<span class="key">F7</span>).</li>
-          <li><strong>Cashier:</strong> press <b>Pay</b> (<span class="key">F9</span>), pick <b>Cash</b>, <b>UPI</b> or <b>Card</b>, or <b>Split</b>. The bill prints and the table becomes <b>Free</b>.</li>
+          <li><strong>Waiter, how they know:</strong> the <b>Alerts</b> bell chimes once and shows <b>Served</b> with the table name. The table card says <b>Cooking</b> while you wait and <b>Ready</b> with a <b>Serve</b> button when the food is done. Tap <b>Serve</b> after the food reaches the guests. Items added after serving, even after the bill was asked for, bring the <b>Serve</b> step back.</li>
+          <li><strong>More items:</strong> use <b>⋯ → Add items</b> on the table card, add the items and press <b>Send to kitchen</b>. Only the new items go on the next KOT or ticket.</li>
+          <li><strong>Bill:</strong> the guest asks for the bill (or taps <b>Ask for bill</b> on the table QR page). The waiter taps <b>Bill asked</b>. The cashier is alerted with <b>Print bill</b> (<span class="key">F7</span>). A guest’s QR request alerts the cashier the same way.</li>
+          <li><strong>Cashier:</strong> tap <b>Print bill</b> on the alert, then <b>Take payment</b> (<span class="key">F9</span>): pick <b>Cash</b>, <b>UPI</b> or <b>Card</b>, or <b>Split</b>. The bill prints and the table becomes <b>Free</b>. If the Admin turned on <b>Print the bill as soon as a bill is asked for</b>, the bill is already printed and the alert says <b>Take payment</b>.</li>
         </ol>
         <p class="tip"><strong>Remember:</strong> order takers cannot take payment. The bill always goes through a Cashier or the Admin.</p>
       </article>
@@ -158,14 +208,15 @@
           <li class="ln r-cashier"><span class="ln-who">Cashier</span><span class="ln-do">Bills on <b>Counter</b> and takes payment</span></li>
           <li class="ln r-kitchen"><span class="ln-who">Kitchen</span><span class="ln-do">KOT or ticket with the order number, <b>Start</b>, <b>Ready</b></span></li>
           <li class="ln r-cashier"><span class="ln-who">Display</span><span class="ln-do">The number shows under <b>READY</b></span></li>
-          <li class="ln r-cashier"><span class="ln-who">Cashier</span><span class="ln-do">Hands it over, taps <b>Collected</b></span></li>
+          <li class="ln r-cashier"><span class="ln-who">Cashier</span><span class="ln-do">Hands it over, taps <b>Handed over</b> on <b>Pickup</b></span></li>
         </ol>
         <ol class="gsteps">
           <li><strong>Cashier:</strong> in POS keep <b>Counter</b> (<span class="key">F2</span>), add items, press <b>Pay</b>. The bill prints. With KOT printing on, the KOT prints too.</li>
           <li><strong>Kitchen, how they know:</strong> a KOT, or a ticket on the kitchen screen labelled with the last 3 digits of the bill number (for example <b>001</b>). Tap <b>Start</b>, then <b>Ready</b>.</li>
           <li><strong>Customer, how they know:</strong> when the kitchen taps <b>Ready</b>, the number appears on the customer display <span class="tag tag-adv">Advanced</span>. Without a kitchen screen, the cashier can press <b>Ready</b> (<span class="key">F6</span>) in POS right after the payment, or <b>Mark ready</b> on <b>Orders</b>.</li>
-          <li><strong>Cashier:</strong> when the customer picks it up, open <b>Orders</b>, tap the bill and press <b>Collected</b>. The number leaves the display and the kitchen ticket is cleared.</li>
+          <li><strong>Cashier:</strong> when the customer picks it up, open <b>Pickup</b> and tap <b>Handed over</b> on the order. The number leaves the display and the kitchen ticket is cleared.</li>
         </ol>
+        <p class="tip"><strong>Order at the counter, we serve:</strong> if the area uses this setup, the cashier picks the guest’s table before <b>Pay</b> (or <b>Collect instead</b> for a normal pickup). After payment the order goes to the kitchen; when it is <b>Ready</b>, the <b>Alerts</b> bell shows <b>Served</b> to the area’s waiters, and serving frees the table. These orders never appear on <b>Pickup</b>. See <a href="#serving">How your café serves</a>.</p>
         <figure class="gshot "><img src="assets/shots/guide/display.webp" width="1280" height="889" loading="lazy" decoding="async" alt="Customer display with an offer slide and order 001 under READY" style="max-width:min(100%,1280px)"></figure>
         <p class="tip"><strong>Good to know:</strong> ready numbers drop off the display by themselves after 20 minutes.</p>
       </article>
@@ -175,20 +226,22 @@
         <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li></ul>
         <ol class="lane" aria-label="Who does what, in order">
           <li class="ln r-guest"><span class="ln-who">Guest</span><span class="ln-do">Scans the table QR, taps <b>Place order</b></span></li>
-          <li class="ln r-cashier"><span class="ln-who">Cashier / Waiter</span><span class="ln-do">Chime, <b>Table requests</b>, <b>Accept</b></span></li>
+          <li class="ln r-cashier"><span class="ln-who">Cashier / Waiter</span><span class="ln-do">Chime, <b>Alerts</b>, <b>Accept</b></span></li>
           <li class="ln r-kitchen"><span class="ln-who">Kitchen</span><span class="ln-do">KOT or ticket, <b>Start</b>, <b>Ready</b></span></li>
           <li class="ln r-guest"><span class="ln-who">Guest</span><span class="ln-do"><b>Call waiter</b> or <b>Ask for bill</b></span></li>
-          <li class="ln r-cashier"><span class="ln-who">Staff</span><span class="ln-do">Responds, taps <b>Done</b>, bills the table</span></li>
+          <li class="ln r-cashier"><span class="ln-who">Staff</span><span class="ln-do"><b>Served</b> when ready; <b>Done</b> on calls; <b>Print bill</b>, <b>Take payment</b></span></li>
         </ol>
         <ol class="gsteps">
           <li><strong>Guest:</strong> scans the QR on the table, adds items and taps <b>Place order</b>. Their phone shows <b>Waiting for the staff to confirm</b>.</li>
-          <li><strong>Staff, how they know:</strong> on POS and Tables, the <b>Table requests</b> button shows a red count, a chime plays and a message pops up (“New order from T6”). Anyone who takes orders (Admin, Cashier, Order taker) can open it.</li>
+          <li><strong>Staff, how they know:</strong> on POS and Tables (and on waiter phones), the <b>Alerts</b> bell shows a red count, a chime plays and a message pops up (“New order from T6”). Anyone who takes orders (Admin, Cashier, Order taker) can open it.</li>
           <li><strong>Staff:</strong> check the items and press <b>Accept</b>. The items join that table’s order and go to the kitchen. Or press <b>Reject</b> and pick a reason (for example <b>Item sold out</b>); the guest sees it.</li>
           <li><strong>Auto-accept:</strong> if the Admin ticked <b>Send table orders to the kitchen without a staff check (auto-accept)</b>, orders skip this step.</li>
-          <li><strong>Calls:</strong> <b>Call waiter</b> and <b>Ask for bill</b> also ring the chime and show in <b>Table requests</b> and on the table card (“Calling waiter”). Go to the table, then tap <b>Done</b>.</li>
-          <li><strong>Paying:</strong> guests never pay on the phone. Bill the table at the counter as usual.</li>
+          <li><strong>Serve:</strong> when the kitchen taps <b>Ready</b>, <b>Alerts</b> shows <b>Served</b>. Take the food to the table and tap it.</li>
+          <li><strong>Calls:</strong> <b>Call waiter</b> rings the chime and shows in <b>Alerts</b> and on the table card (“Calling waiter”). Go to the table, then tap <b>Done</b>. <b>Ask for bill</b> alerts the cashier with <b>Print bill</b>, then <b>Take payment</b>.</li>
+          <li><strong>Pay first areas:</strong> if the area is set to pay first, the guest’s phone says <b>Pay at the counter to start your order</b>. The cashier’s alert shows <b>Take payment ₹N</b>; paying accepts the order and sends it to the kitchen. An order not paid within 30 minutes expires and the guest sees <b>Expired — please order again</b>.</li>
+          <li><strong>Paying:</strong> guests never pay on the phone. Pay at the counter as usual.</li>
         </ol>
-        <div class="shot-pair"><figure class="gshot phone"><img src="assets/shots/guide/phone-selforder.webp" width="780" height="1560" loading="lazy" decoding="async" alt="Guest&#x27;s phone showing the café menu for table T6 with Add buttons" style="max-width:min(100%,390px)"></figure><figure class="gshot narrow"><img src="assets/shots/guide/inbox-table.webp" width="480" height="455" loading="lazy" decoding="async" alt="Table requests panel with a waiter call and a self-order from T6 with Accept and Reject" style="max-width:min(100%,480px)"></figure></div>
+        <div class="shot-pair"><figure class="gshot phone"><img src="assets/shots/guide/phone-selforder.webp" width="780" height="1560" loading="lazy" decoding="async" alt="Guest&#x27;s phone showing the café menu for table T6 with Add buttons" style="max-width:min(100%,390px)"></figure><figure class="gshot narrow"><img src="assets/shots/guide/inbox-table.webp" width="480" height="455" loading="lazy" decoding="async" alt="Alerts panel with a QR order from T8 (items and total, Reject and Accept) and a waiter call with Done" style="max-width:min(100%,480px)"></figure></div>
       </article>
 
       <article class="sc hflow" id="flow-online" data-roles="cashier kitchen owner">
@@ -198,13 +251,13 @@
           <li class="ln r-guest"><span class="ln-who">Platform</span><span class="ln-do">New order arrives, chime</span></li>
           <li class="ln r-cashier"><span class="ln-who">Cashier</span><span class="ln-do"><b>Online orders</b>, <b>Accept</b></span></li>
           <li class="ln r-kitchen"><span class="ln-who">Kitchen</span><span class="ln-do">KOT or ticket, <b>Start</b>, <b>Ready</b></span></li>
-          <li class="ln r-cashier"><span class="ln-who">Cashier</span><span class="ln-do">Packs it for the rider, <b>Collected</b></span></li>
+          <li class="ln r-cashier"><span class="ln-who">Cashier</span><span class="ln-do">Packs it, <b>Picked up by rider</b> on <b>Pickup</b></span></li>
         </ol>
         <ol class="gsteps">
           <li><strong>Cashier, how they know:</strong> the <b>Online orders</b> button on POS shows a red count and a chime plays. The Admin’s <b>Today</b> screen also lists waiting orders.</li>
           <li><strong>Cashier:</strong> open <b>Online orders</b>, check the items and press <b>Accept</b>. TapTill makes the bill and sends it to the kitchen. Or press <b>Reject</b> with a reason.</li>
           <li>If an item says <b>Not linked to your menu</b>, <b>Accept</b> is greyed out. The Admin links it in <b>Settings → Online orders → Menu mapping</b>.</li>
-          <li><strong>Kitchen:</strong> cooks it like any order. <strong>Cashier:</strong> hands it to the rider and marks it <b>Collected</b> on <b>Orders</b>.</li>
+          <li><strong>Kitchen:</strong> cooks it like any order. <strong>Cashier:</strong> hands it to the rider and taps <b>Picked up by rider</b> on <b>Pickup</b>.</li>
         </ol>
         <p class="note"><strong>Status today:</strong> Swiggy and Zomato connect through UrbanPiper, which is marked “coming soon” in TapTill 2.2. Until then the Admin can press <b>Send test order</b> in <b>Settings → Online orders</b> to practise this flow. Orders you type in yourself with <b>Delivery</b> (<span class="key">F4</span>) and a Swiggy or Zomato platform work in every plan.</p>
         <figure class="gshot narrow"><img src="assets/shots/guide/inbox-online.webp" width="480" height="470" loading="lazy" decoding="async" alt="Online orders panel with a Swiggy order, its items and Accept and Reject buttons" style="max-width:min(100%,480px)"></figure>
@@ -556,16 +609,16 @@
       </article>
     </section>
 
-    <section class="gsec" id="daily" data-roles="owner cashier waiter">
+    <section class="gsec" id="daily" data-roles="owner cashier waiter rider">
       <h2>Every day at the counter and tables</h2>
 
-      <article class="sc" id="login" data-roles="owner cashier waiter kitchen store ca">
+      <article class="sc" id="login" data-roles="owner cashier waiter kitchen store ca rider">
         <h3>Log in, switch user and lock</h3>
-        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li></ul>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li><li class="rc r-rider">Rider</li></ul>
         <figure class="gshot narrow"><img src="assets/shots/guide/login-full.webp" width="752" height="961" loading="lazy" decoding="async" alt="Login screen with staff name tiles, a PIN pad and the Clock in or out button" style="max-width:min(100%,752px)"></figure>
         <ol class="gsteps">
           <li>Tap your name, then type your PIN on the pad (or on the keyboard) and press <b>OK</b>.</li>
-          <li>TapTill opens your screen: Admin → <b>Today</b>, Cashier and Order taker → <b>POS</b>, Kitchen → <b>Kitchen</b>, Store manager → <b>Stock</b>, Accountant → <b>Accounts</b>.</li>
+          <li>TapTill opens your screen: Admin → <b>Today</b>, Cashier and Order taker → <b>POS</b>, Kitchen → <b>Kitchen</b>, Store manager → <b>Stock</b>, Accountant → <b>Accounts</b>, Delivery → <b>My deliveries</b>.</li>
           <li>Leaving the counter? Press <b>Switch user</b> so the next person logs in as themselves.</li>
           <li>After some idle minutes the screen shows <b>Locked</b>. Type the same PIN to carry on, or <b>Switch user</b>.</li>
         </ol>
@@ -642,7 +695,7 @@
         <ol class="gsteps">
           <li>Press <b>Dine-in</b> (<span class="key">F3</span>). Type the table number and press <span class="key">Enter</span>, or tap it. Or tap a table on <b>Tables</b>.</li>
           <li>Add the items.</li>
-          <li>Press <b>Save</b> (<span class="key">Ctrl</span>+<span class="key">S</span>). For an order taker the button is called <b>Send to kitchen</b>. The KOT prints or the kitchen screen gets the ticket.</li>
+          <li>Press <b>Send to kitchen</b> (<span class="key">Ctrl</span>+<span class="key">S</span>). The KOT prints or the kitchen screen gets the ticket. If your café uses neither KOT nor the kitchen screen, the button is called <b>Save order</b> and only saves the order.</li>
           <li>The table now shows <b>Occupied</b> with its running total.</li>
         </ol>
         <p class="tip"><strong>If something goes wrong:</strong> an orange <b>unsaved</b> badge means the changes are not with the kitchen yet. Press <b>Save</b>.</p>
@@ -675,21 +728,22 @@
       <article class="sc" id="tables-view" data-roles="waiter cashier owner">
         <h3>See all tables at a glance</h3>
         <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
-        <figure class="gshot "><img src="assets/shots/guide/tables-cashier.webp" width="1280" height="889" loading="lazy" decoding="async" alt="Tables screen: occupied tables in green with totals, Ordered chips and Served and Bill asked buttons, free tables with Seat guests" style="max-width:min(100%,1280px)"></figure>
+        <figure class="gshot "><img src="assets/shots/guide/tables-cashier.webp" width="1280" height="889" loading="lazy" decoding="async" alt="Tables screen as a cashier: Hall and Garden areas, with tables Cooking, Ready with Serve, Bill requested with Print bill, and Bill printed with Pay, and free tables with Take order" style="max-width:min(100%,1280px)"></figure>
         <ol class="gsteps">
           <li>Open <b>Tables</b>. It shows how many are occupied and free.</li>
-          <li>A busy table shows its total, number of items and minutes seated. The kitchen chip shows <b>In kitchen</b>, <b>Preparing</b> or <b>Ready</b>.</li>
+          <li>A busy table shows its total, number of items and minutes seated. With the kitchen screen on, the card says <b>Cooking</b> and then <b>Ready</b>; the kitchen chip shows <b>In kitchen</b>, <b>Preparing</b> or <b>Ready</b>. A table paid first and not yet served shows the paid total and item count.</li>
           <li>Tap a free table to start an order, or a busy one to open it.</li>
         </ol>
       </article>
 
       <article class="sc" id="table-service" data-roles="waiter cashier owner">
-        <h3>Seated, served, bill asked <span class="tag tag-pro">Pro</span></h3>
+        <h3>Seated, served, bill asked</h3>
         <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
         <ol class="gsteps">
-          <li>Guests sit down: tap <b>Seat guests</b> under a free table. The timer starts.</li>
-          <li>Food served: tap <b>Served</b>. It is highlighted when the kitchen has marked everything ready. If the kitchen is still cooking, TapTill asks first, because serving takes the order off the kitchen screen.</li>
-          <li>Guest asks for the bill: tap <b>Bill asked</b> so the cashier sees it. <b>Clear bill request</b> undoes it.</li>
+          <li>Guests sit down: tap <b>Seat guests</b> under a free table. The time chip starts <span class="tag tag-pro">Pro</span>.</li>
+          <li>Food served: tap <b>Serve</b> (on the table card or the <b>Alerts</b> bell). It is highlighted when the kitchen has marked everything ready. If the kitchen is still cooking, TapTill asks first, because serving takes the order off the kitchen screen.</li>
+          <li>Guest asks for the bill: the waiter taps <b>Bill asked</b> and the cashier is alerted with <b>Print bill</b>. <b>Clear bill request</b> undoes it.</li>
+          <li>Time chips (seated, served, bill asked minutes) and the repeat chime when an alert waits too long are <span class="tag tag-pro">Pro</span>. Everything else here is in every plan.</li>
           <li>A bell like <b>Calling waiter</b> means a guest pressed a button on the table QR page. Go to them, then tap <b>Done: waiter</b> or <b>Done: bill</b>.</li>
         </ol>
       </article>
@@ -718,15 +772,15 @@
         <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
         <ol class="gsteps">
           <li>Open <b>Pickup</b>. Counter, takeaway, advance and delivery orders move through <b>Cooking</b> → <b>Ready</b> → <b>Done today</b>. Dine-in stays on Tables.</li>
-          <li>When the kitchen marks an order ready, POS, Tables and Pickup show <b>Ready: 014</b> with a chime.</li>
+          <li>When the kitchen marks an order ready, POS, Tables and Pickup show <b>Ready: 014</b> with a chime. Pressing <b>Ready</b> (<span class="key">F6</span>) yourself also marks its kitchen tickets ready. A ready own-delivery order rings <b>Delivery 014 ready — send out</b>.</li>
           <li>The customer took it: tap <b>Handed over</b>. A Swiggy or Zomato rider took it: tap <b>Picked up by rider</b>. It leaves the customer display too.</li>
           <li>An order that is not paid yet shows <b>Take payment</b> instead: finish it in POS first.</li>
         </ol>
       </article>
 
-      <article class="sc" id="own-delivery" data-roles="cashier owner">
-        <h3>Your own delivery and cash on delivery</h3>
-        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+      <article class="sc" id="own-delivery" data-roles="cashier owner rider">
+        <h3>Your own delivery and cash on delivery <span class="tag tag-adv">Advanced</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-rider">Rider</li></ul>
         <ol class="gsteps">
           <li>Admin: add riders on <b>Users</b>. A person with the <b>Delivery</b> role is a rider who logs in on their phone; riders who don't log in are added under <b>Delivery riders</b>.</li>
           <li>Take a delivery order in POS (<span class="key">F4</span>). In the payment window either take payment now, or tap <b>Cash on delivery</b>: the order is saved unpaid and the rider collects the money.</li>
@@ -734,7 +788,20 @@
           <li>The rider taps <b>Delivered</b> on their phone and says how the customer paid (Cash, UPI…), or the cashier does it on Pickup. <b>Returned</b> needs a reason; an unpaid order that comes back is cancelled.</li>
           <li>The yellow strip on Pickup shows what each rider holds. When the rider hands the money in, tap <b>Money received</b>: the bills are paid then and the cash counts in today's drawer.</li>
         </ol>
-        <p class="tip"><strong>Reports:</strong> <b>Reports → Pickup &amp; delivery</b> shows deliveries per rider, returned orders, cash still with riders and average times. The cash drawer shows <b>Cash with riders</b> until it is settled.</p>
+        <p class="tip"><strong>Reports:</strong> <b>Reports → Pickup &amp; delivery</b> shows deliveries per rider, returned orders, cash still with riders and average times. The cash drawer shows <b>Cash with riders</b> until it is settled. Settle a rider’s cash before you close the day: once the day is closed it is refused, and the cash counts in the next day’s drawer.</p>
+        <p class="note"><strong>On Basic:</strong> riders, <b>Send out</b>, cash on delivery and the Delivery role need Advanced or above. Your own delivery orders are then paid in POS and handed over on <b>Pickup</b> like delivery-app orders.</p>
+      </article>
+
+      <article class="sc" id="rider-phone" data-roles="rider owner">
+        <h3>Rider: deliver from your phone <span class="tag tag-adv">Advanced</span></h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-rider">Rider</li></ul>
+        <ol class="gsteps">
+          <li>The Admin adds you on <b>Users</b> with the <b>Delivery</b> role and pairs your phone once (<a href="#phones">Pair a phone or tablet</a>).</li>
+          <li>Log in with your PIN. TapTill opens <b>My deliveries</b>: the orders the counter sent out with you, with the address, the customer's phone and the money to collect.</li>
+          <li>At the door tap <b>Delivered</b> and pick how the customer paid (Cash, UPI…). Could not deliver? Tap <b>Returned</b> and write why.</li>
+          <li>The top of the screen shows the money you hold. Hand it in at the counter; the cashier taps <b>Money received</b>.</li>
+        </ol>
+        <p class="tip"><strong>Good to know:</strong> you only ever see your own orders. Your phone needs the café Wi-Fi to update; mark orders when you are back in range.</p>
       </article>
 
       <article class="sc" id="free-table" data-roles="cashier owner waiter">
@@ -869,7 +936,7 @@
         <ol class="gsteps">
           <li>With a kitchen screen, the number goes to the customer display when the kitchen taps <b>Ready</b>.</li>
           <li>Without one, press <b>Ready</b> (<span class="key">F6</span>) in POS after a counter bill, or <b>Mark ready</b> on <b>Orders</b>.</li>
-          <li>When it is picked up, press <b>Collected</b> on <b>Orders</b>.</li>
+          <li>When it is picked up, tap <b>Handed over</b> on <b>Pickup</b>.</li>
         </ol>
         <p class="tip"><strong>Good to know:</strong> the <b>Ready</b> button appears only when your licence has a customer display or kitchen screen <span class="tag tag-adv">Advanced</span>.</p>
       </article>
@@ -889,9 +956,9 @@
         <h3>A guest ordered from the table QR <span class="tag tag-pro">Pro</span></h3>
         <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
         <ol class="gsteps">
-          <li>A chime plays and <b>Table requests</b> shows a count. Tap it.</li>
+          <li>A chime plays and the <b>Alerts</b> bell shows a count. Tap it.</li>
           <li>For an order, press <b>Accept</b> (it joins the table’s order and goes to the kitchen) or <b>Reject</b> with a reason.</li>
-          <li>For a waiter call or bill request, go to the table and press <b>Done</b>.</li>
+          <li>For a waiter call, go to the table and press <b>Done</b>. For a bill request, press <b>Print bill</b>, then <b>Take payment</b>. In a pay-first area, press <b>Take payment</b>.</li>
         </ol>
       </article>
 
@@ -958,7 +1025,7 @@
           <li>Bill or close all open tables first.</li>
           <li>Open <b>Reports → Day-end</b> (the Admin can also use <b>Close day</b> on <b>Today</b>). It shows paid bills, total sales and the expected cash.</li>
           <li>Count the cash with the <b>−</b> / <b>+</b> buttons. It shows <b>Matches expected</b>, <b>Over by</b> or <b>Short by</b>.</li>
-          <li>Press <b>Close day</b>. The Z-report opens: print it.</li>
+          <li>Press <b>Close day</b>. The Z-report opens: print it. It also lists <b>Cash with riders (not yet handed in)</b> per rider, and <b>Cash on delivery still out (to collect)</b> for orders still on the road; neither is part of the drawer total. It also says how much of <b>Cash sales</b> is advance payments taken for later orders.</li>
         </ol>
         <p class="tip"><strong>If something goes wrong:</strong> TapTill warns if tables are still open (they won’t be in today’s figures) or if you counted ₹0. Only the Admin can <b>Reopen day</b>, then close it again.</p>
       </article>
@@ -991,7 +1058,7 @@
           <li><strong>Drag and drop:</strong> drag a ticket to the next column instead of tapping. On a tablet, press and hold the ticket for a moment, then drag. Moved one column too far? Tap <b>↩ Not started</b> or <b>↩ Not ready</b>.</li>
           <li>When the waiter taps <b>Served</b> or a dine-in bill is paid, its tickets leave the screen by themselves. Tap <b>Sound off</b> to switch the chime on.</li>
         </ol>
-        <p class="tip"><strong>Good to know:</strong> ready tickets leave the screen when the counter marks the order <b>Collected</b>, or the waiter taps <b>Served</b>. The kitchen can also tap <b>Picked up ✓</b> on a ready ticket. Took one off by mistake? <b>Recall served…</b> lists today's served orders: tap one to bring it back. A ticket left over from an earlier day is marked and has a <b>Remove</b> button.</p>
+        <p class="tip"><strong>Good to know:</strong> ready tickets leave the screen when the counter taps <b>Handed over</b> on Pickup, or the waiter taps <b>Served</b>. The kitchen can also tap <b>Picked up ✓</b> on a ready ticket. Took one off by mistake? <b>Recall served…</b> lists today's served orders: tap one to bring it back. A ticket left over from an earlier day is marked and has a <b>Remove</b> button.</p>
       </article>
 
       <article class="sc" id="kitchen-more" data-roles="kitchen">
@@ -1325,7 +1392,7 @@
       </article>
     </section>
 
-    <section class="gsec" id="help" data-roles="owner cashier waiter kitchen store ca">
+    <section class="gsec" id="help" data-roles="owner cashier waiter kitchen store ca rider">
       <h2>Troubleshooting and questions</h2>
 
       <article class="sc" id="forgot-pin" data-roles="owner cashier waiter kitchen store ca">
@@ -1427,7 +1494,7 @@
       </article>
     </section>
 
-    <section class="gsec" id="checklists" data-roles="owner cashier waiter kitchen store ca">
+    <section class="gsec" id="checklists" data-roles="owner cashier waiter kitchen store ca rider">
       <h2>Training checklists</h2>
       <p class="sec-lede">Sit with the new person and tick each line once they can do it alone. Ticks are saved in this browser only. <span class="print-hint">Printing shows the selected role’s checklist and steps, without pictures.</span></p>
       <div class="btn-row cl-actions"><button type="button" class="btn btn-solid" id="print-btn">Print this role’s guide</button> <button type="button" class="btn btn-line" id="clear-ticks">Clear ticks</button></div>
@@ -1470,7 +1537,7 @@
           <li><label><input type="checkbox"> Accept or reject online and table QR orders</label></li>
           <li><label><input type="checkbox"> Find a customer by phone and redeem points</label></li>
           <li><label><input type="checkbox"> Reprint a bill and cancel one with a reason</label></li>
-          <li><label><input type="checkbox"> Mark an order ready and collected</label></li>
+          <li><label><input type="checkbox"> Mark an order ready and hand it over on Pickup</label></li>
           <li><label><input type="checkbox"> Add a payout with a reason</label></li>
           <li><label><input type="checkbox"> Close the day and print the Z-report</label></li>
         </ul>
@@ -1487,12 +1554,25 @@
           <li><label><input type="checkbox"> Pick sizes and add a kitchen note</label></li>
           <li><label><input type="checkbox"> Press Send to kitchen and check the KOT came out</label></li>
           <li><label><input type="checkbox"> Add more items to the same table</label></li>
-          <li><label><input type="checkbox"> Read the kitchen chip: In kitchen, Preparing, Ready</label></li>
-          <li><label><input type="checkbox"> Tap Seat guests, Served and Bill asked on Tables</label></li>
-          <li><label><input type="checkbox"> Answer a “Calling waiter” and tap Done</label></li>
+          <li><label><input type="checkbox"> Read the table card: Cooking, then Ready (kitchen chip: In kitchen, Preparing, Ready)</label></li>
+          <li><label><input type="checkbox"> Tap Seat guests, Serve and Bill asked on Tables</label></li>
+          <li><label><input type="checkbox"> Open the Alerts bell, tap Serve, and answer a “Calling waiter” with Done</label></li>
           <li><label><input type="checkbox"> Remove an item and tell the kitchen</label></li>
         </ul>
         <p class="handoff"><strong>Receives from:</strong> guests (orders, calls), kitchen (Ready). <strong>Hands to:</strong> kitchen (KOT / ticket), cashier (bill asked, payment).</p>
+      </article>
+
+      <article class="sc checklist" id="check-rider" data-roles="rider">
+        <h3>A new delivery rider can…</h3>
+        <ul class="who" aria-label="For"><li class="rc r-rider">Rider</li></ul>
+        <ul class="ticks-list">
+          <li><label><input type="checkbox"> Log in on their phone with their own PIN</label></li>
+          <li><label><input type="checkbox"> Find the address and call the customer from My deliveries</label></li>
+          <li><label><input type="checkbox"> Mark an order Delivered with how the customer paid</label></li>
+          <li><label><input type="checkbox"> Mark an order Returned with a reason</label></li>
+          <li><label><input type="checkbox"> Check the money they hold and hand it in at the counter</label></li>
+        </ul>
+        <p class="handoff"><strong>Receives from:</strong> cashier (orders sent out). <strong>Hands to:</strong> cashier (cash on delivery money, returned orders).</p>
       </article>
 
       <article class="sc checklist" id="check-kitchen" data-roles="kitchen">

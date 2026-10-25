@@ -6,6 +6,7 @@
   --r-kitchen: #9a3412; --r-kitchen-bg: #fdeee6;
   --r-store: #6b4500;   --r-store-bg: #fbf1dc;
   --r-ca: #4338ca;      --r-ca-bg: #eceafd;
+  --r-rider: #86198f;   --r-rider-bg: #f8e8f9;
   --r-guest: #4b4540;   --r-guest-bg: #efebe8;
   --head-h: 64px;
 }
@@ -15,6 +16,7 @@
 .r-kitchen { --rc: var(--r-kitchen); --rbg: var(--r-kitchen-bg); }
 .r-store { --rc: var(--r-store); --rbg: var(--r-store-bg); }
 .r-ca { --rc: var(--r-ca); --rbg: var(--r-ca-bg); }
+.r-rider { --rc: var(--r-rider); --rbg: var(--r-rider-bg); }
 .r-guest { --rc: var(--r-guest); --rbg: var(--r-guest-bg); }
 
 .guide-head .guide-ver { font-size: 15px; margin-top: 8px; }
