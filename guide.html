@@ -105,14 +105,15 @@
         <p class="tip"><strong>If something is missing:</strong> a locked screen says <b>Available in your plan upgrade — contact your seller</b>. Nothing is broken; ask the owner.</p>
       </article>
       <article class="sc" id="roles-table" data-roles="owner cashier waiter kitchen store ca">
-        <h3>The six roles and what each can do</h3>
+        <h3>The seven roles and what each can do</h3>
         <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li><li class="rc r-store">Store manager</li><li class="rc r-ca">Accountant</li></ul>
         <div class="table-scroll"><table class="gtable">
           <thead><tr><th scope="col">Role</th><th scope="col">Can do</th><th scope="col">Cannot do</th></tr></thead>
           <tbody>
             <tr><th scope="row">Admin</th><td>Everything: menu, offers, reports, settings, users, licence, backups, approvals.</td><td>—</td></tr>
-            <tr><th scope="row">Cashier</th><td>Billing, payments, discounts, cancel a bill with a reason, today’s bills, payouts, mark orders ready, close the day, accept online and table QR orders.</td><td>Bills from other dates, menu, settings, most reports.</td></tr>
-            <tr><th scope="row">Order taker</th><td>Takes table (dine-in) orders and sends them to the kitchen.</td><td>Payments, discounts, cancelling, counter or delivery orders.</td></tr>
+            <tr><th scope="row">Cashier</th><td>Billing, payments, discounts, cancel a bill with a reason, today’s bills, payouts, mark orders ready, close the day, accept online and table QR orders, free a stuck table, watch the kitchen screen, hand orders over, send deliveries out and take riders’ cash.</td><td>Bills from other dates, menu, settings, most reports.</td></tr>
+            <tr><th scope="row">Order taker</th><td>Takes table (dine-in) orders and sends them to the kitchen, watches the kitchen screen, hands ready orders over.</td><td>Payments, discounts, cancelling, counter or delivery orders.</td></tr>
+            <tr><th scope="row">Delivery</th><td>A rider, on their own phone: sees only the orders sent out with them, calls the customer, marks <b>Delivered</b> (and how the customer paid) or <b>Returned</b>.</td><td>Everything else.</td></tr>
             <tr><th scope="row">Kitchen</th><td>Only the kitchen screen: <b>Start</b> and <b>Ready</b>.</td><td>Everything else.</td></tr>
             <tr><th scope="row">Store manager <span class="tag tag-pro">Pro</span></th><td>Stock: suppliers, purchases, returns, wastage, counts, purchase orders, supplier dues. Big entries wait for the Admin.</td><td>Billing, sales, settings, food cost, approvals.</td></tr>
             <tr><th scope="row">Accountant <span class="tag tag-pro">Pro</span></th><td>Read-only books: bills (all dates), reports, GST, expenses, stock, cash drawer, the CA export, questions on bills.</td><td>Any change to bills, menu or settings.</td></tr>
@@ -693,6 +694,49 @@
         </ol>
       </article>
 
+      <article class="sc" id="order-numbers" data-roles="cashier owner waiter kitchen">
+        <h3>Order numbers</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li><li class="rc r-kitchen">Kitchen</li></ul>
+        <ul class="plain">
+          <li>Every order gets a number for the day: <b>001</b>, <b>002</b>… starting again each morning.</li>
+          <li>The same number is on the bill, the KOT, the kitchen screen, the Pickup screen and the customer display (<b>READY 014</b>). Dine-in orders too: the kitchen still sees the table name.</li>
+        </ul>
+      </article>
+
+      <article class="sc" id="takeaway" data-roles="cashier owner">
+        <h3>Takeaway (parcel) orders</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <ol class="gsteps">
+          <li>In POS tap <b>Takeaway</b> (or press <span class="key">F2</span> twice). The bill says <b>Takeaway</b>; the KOT and kitchen screen say <b>PARCEL</b>.</li>
+          <li>If the Admin set a <b>packing charge</b> (Settings → Billing), it is added and taxed like an item. Tap <b>Remove</b> next to it to leave it off one order.</li>
+          <li>Take payment as usual. Reports show Takeaway separately from Counter.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="pickup" data-roles="cashier owner waiter">
+        <h3>Pickup &amp; delivery: hand orders over</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter</li></ul>
+        <ol class="gsteps">
+          <li>Open <b>Pickup</b>. Counter, takeaway, advance and delivery orders move through <b>Cooking</b> → <b>Ready</b> → <b>Done today</b>. Dine-in stays on Tables.</li>
+          <li>When the kitchen marks an order ready, POS, Tables and Pickup show <b>Ready: 014</b> with a chime.</li>
+          <li>The customer took it: tap <b>Handed over</b>. A Swiggy or Zomato rider took it: tap <b>Picked up by rider</b>. It leaves the customer display too.</li>
+          <li>An order that is not paid yet shows <b>Take payment</b> instead: finish it in POS first.</li>
+        </ol>
+      </article>
+
+      <article class="sc" id="own-delivery" data-roles="cashier owner">
+        <h3>Your own delivery and cash on delivery</h3>
+        <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li></ul>
+        <ol class="gsteps">
+          <li>Admin: add riders on <b>Users</b>. A person with the <b>Delivery</b> role is a rider who logs in on their phone; riders who don't log in are added under <b>Delivery riders</b>.</li>
+          <li>Take a delivery order in POS (<span class="key">F4</span>). In the payment window either take payment now, or tap <b>Cash on delivery</b>: the order is saved unpaid and the rider collects the money.</li>
+          <li>On <b>Pickup</b> tap <b>Send out</b> and pick the rider. The order moves to <b>Out for delivery</b>.</li>
+          <li>The rider taps <b>Delivered</b> on their phone and says how the customer paid (Cash, UPI…), or the cashier does it on Pickup. <b>Returned</b> needs a reason; an unpaid order that comes back is cancelled.</li>
+          <li>The yellow strip on Pickup shows what each rider holds. When the rider hands the money in, tap <b>Money received</b>: the bills are paid then and the cash counts in today's drawer.</li>
+        </ol>
+        <p class="tip"><strong>Reports:</strong> <b>Reports → Pickup &amp; delivery</b> shows deliveries per rider, returned orders, cash still with riders and average times. The cash drawer shows <b>Cash with riders</b> until it is settled.</p>
+      </article>
+
       <article class="sc" id="free-table" data-roles="cashier owner waiter">
         <h3>Free a stuck table</h3>
         <ul class="who" aria-label="For"><li class="rc r-owner">Owner / Admin</li><li class="rc r-cashier">Cashier</li><li class="rc r-waiter">Waiter (if allowed)</li></ul>
@@ -932,6 +976,7 @@
           <li><strong>Screen and printed ticket:</strong> both at once.</li>
         </ul>
         <p class="tip"><strong>Who decides:</strong> the Admin, in <b>Settings → Printing &amp; kitchen</b>. If the kitchen screen says <b>The kitchen screen is off</b>, orders are going to the printer instead.</p>
+        <p class="tip"><strong>Cashiers and waiters</strong> can open <b>Kitchen</b> to see what is cooking, without moving tickets. The Admin can let cashiers move tickets too: <b>Users → Cashiers can update the kitchen screen</b>.</p>
       </article>
 
       <article class="sc" id="kitchen-screen" data-roles="kitchen owner">
@@ -946,7 +991,7 @@
           <li><strong>Drag and drop:</strong> drag a ticket to the next column instead of tapping. On a tablet, press and hold the ticket for a moment, then drag. Moved one column too far? Tap <b>↩ Not started</b> or <b>↩ Not ready</b>.</li>
           <li>When the waiter taps <b>Served</b> or a dine-in bill is paid, its tickets leave the screen by themselves. Tap <b>Sound off</b> to switch the chime on.</li>
         </ol>
-        <p class="tip"><strong>Good to know:</strong> ready tickets leave the screen when the counter marks the order <b>Collected</b>, or the waiter taps <b>Served</b>. Took one off by mistake? <b>Recall last served</b> brings it back.</p>
+        <p class="tip"><strong>Good to know:</strong> ready tickets leave the screen when the counter marks the order <b>Collected</b>, or the waiter taps <b>Served</b>. The kitchen can also tap <b>Picked up ✓</b> on a ready ticket. Took one off by mistake? <b>Recall served…</b> lists today's served orders: tap one to bring it back. A ticket left over from an earlier day is marked and has a <b>Remove</b> button.</p>
       </article>
 
       <article class="sc" id="kitchen-more" data-roles="kitchen">
@@ -1459,7 +1504,7 @@
           <li><label><input type="checkbox"> Turn the kitchen screen sound on</label></li>
           <li><label><input type="checkbox"> Tap Start, then Ready</label></li>
           <li><label><input type="checkbox"> Spot amber and red tickets and cook those first</label></li>
-          <li><label><input type="checkbox"> Use Recall last served</label></li>
+          <li><label><input type="checkbox"> Use Recall served… and Picked up</label></li>
           <li><label><input type="checkbox"> Recognise an advance order with its pickup time</label></li>
         </ul>
         <p class="handoff"><strong>Receives from:</strong> waiters and cashiers (KOTs / tickets), accepted QR and online orders. <strong>Hands to:</strong> waiters (Ready for the table), customer display (ready numbers).</p>
